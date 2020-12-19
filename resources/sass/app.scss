@@ -1,0 +1,60 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    height: 100%
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(rgb(22, 66, 83), rgb(2, 0, 112), rgb(22, 56, 83));
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+/*.slika {
+    background-image: url("../../storage/chess.png");
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: fixed;
+    background-repeat: no-repeat;
+    opacity: 10%;
+    background-size: 100% 100%;
+    margin-bottom: 20%;
+
+}*/
+
+.slika {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.slika::after {
+    content: "";
+    background: url("../../storage/chess.png");
+    opacity: 10%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
