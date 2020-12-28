@@ -10951,3 +10951,45 @@ body {
   background-size: 100% 100%;
 }
 
+.icons {
+  position: fixed;
+  right: 1%;
+  top: 10%;
+  z-index: 1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.grid-item:hover {
+  transition: 1s;
+  transform: rotateY(360deg);
+}
+
+.chessicon {
+  width: 200%;
+  margin-top: -100%;
+  margin-left: -50%;
+  border-radius: 50%;
+}
+
+.chessicon1 {
+  background-color: white;
+}
+
+.chessicon2 {
+  background-color: black;
+}
+
