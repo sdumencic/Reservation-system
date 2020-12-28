@@ -37,7 +37,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="/history">History</a>
                 </li>
             </ul>
             @if (Route::has('login'))
@@ -56,19 +56,43 @@
         </div>
     </nav>
 
+    <div class="icons">
+        <div class="grid-container">
+            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/VJGKTT2/pijun-white.png" alt="pijun-white"> </div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/qnZ415L/knight-white.png" alt="knight-white">
+            </div>
+            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/h7zVVRG/kula-white.png" alt="kula-white">
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item chessicon1"><img class="chessicon chessicon1" src="https://i.ibb.co/9YBZHvx/kula-black.png" alt="kula-black"></div>
+            <div class="grid-item chessicon1"><img class="chessicon chessicon1" src="https://i.ibb.co/WFm25yV/queen-black.png" alt="queen-black">
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/CBR7CLf/king-white.png" alt="king-white">
+            </div>
+            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/WnhYHLv/queen-white.png" alt="queen-white"></div>
+            <div class="grid-item"></div>
+        </div>
+    </div>
+
     <div class="slika">
 
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+        <div
+            class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
             {{--@if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                            <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
+                    <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
                     @else
-                            <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+                    <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
 
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                            @endif
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                    @endif
                     @endauth
                 </div>
             @endif--}}
@@ -84,8 +108,7 @@
                         style="background-color:rgb(22, 66, 83); color:white; margin-top:20px;">Learn more</a>
                 </div>
                 <div style="width:20%; margin: 20px 20px; margin-right: 20%;">
-                    <img style="border-radius:20px; margin: 10px 0;"
-                        src="https://i.ibb.co/FgR3ptj/crocoach.png">
+                    <img style="border-radius:20px; margin: 10px 0;" src="https://i.ibb.co/FgR3ptj/crocoach.png">
                 </div>
             </div>
         </div>
