@@ -25,7 +25,7 @@
 <body class="antialiased">
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
         style="margin-bottom:4%; background-color:rgb(241, 241, 241); font-weight:900;">
-        <a class="navbar-brand" href="#">CroCoach</a>
+        <a class="navbar-brand" href="./..">CroCoach</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./..">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/history">History</a>
@@ -56,29 +56,6 @@
         </div>
     </nav>
 
-    <div class="icons">
-        <br><br>
-        <div class="grid-container">
-            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/VJGKTT2/pijun-white.png" alt="pijun-white"> </div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/qnZ415L/knight-white.png" alt="knight-white">
-            </div>
-            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/h7zVVRG/kula-white.png" alt="kula-white">
-            </div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item chessicon1"><img class="chessicon chessicon1" src="https://i.ibb.co/9YBZHvx/kula-black.png" alt="kula-black"></div>
-            <div class="grid-item chessicon1"><img class="chessicon chessicon1" src="https://i.ibb.co/WFm25yV/queen-black.png" alt="queen-black">
-            </div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/CBR7CLf/king-white.png" alt="king-white">
-            </div>
-            <div class="grid-item chessicon2"><img class="chessicon chessicon2" src="https://i.ibb.co/WnhYHLv/queen-white.png" alt="queen-white"></div>
-            <div class="grid-item"></div>
-        </div>
-    </div>
 
     <div class="slika">
 
@@ -102,14 +79,58 @@
                 style="display:flex; background-color:rgba(179, 179, 179, 0.7);">
 
                 <div class="jumbotron" style="margin:2rem; width: 100%; background-color:rgb(241, 241, 241); text-align:center;">
-                    <h1 class="display-4" style="font-weight:900; color:rgb(22, 66, 83)">Contacts</h1>
-                    <p class="lead">Feel free to contact me with any questions!</p>
+                    <h1 class="display-4" style="font-weight:900; font-size:700%; color:rgb(30, 88, 110)">Contacts</h1>
+                    <p class="lead" style="font-size: 200%">Feel free to contact me with any questions!</p>
                     <hr class="my-4">
 
+                    <div class="card" style="float:left;  margin-left: 22%; margin-right: 5%;  width: 15%; height:70%">
+                        <img class="card-img-top" style="padding: 10%; padding-top: 10%; padding-bottom:5%" src="https://i.ibb.co/rFJQtLm/Fiverr.jpg" alt="Fiverr image">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-size:200%"><b>Fiverr</b></h5>
+                          <p class="card-text" style="font-size:110%">My main page where you will find my reviews and more information</p>
+                          <a href="#" class="neonbutton-fiverr">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Contact through Fiverr
+                          </a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="float:left; margin-right: 5%;  width: 15%; height:70%">
+                        <img class="card-img-top" style="padding: 10%; padding-top: 10%" src = "https://i.ibb.co/QbND4rF/Discord.png" alt="Discord image">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-size:200%"><b>Discord</b></h5>
+                          <p class="card-text" style="font-size:110%; padding-bottom:5%">Sandro970#4008</p>
+                          <a href="#" class="neonbutton-discord">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Contact through Discord
+                          </a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="float:left; margin-right: 5%; width: 15%; height:70%">
+                        <img class="card-img-top" style = "padding: 10%; padding-top: 10%;" src="https://i.ibb.co/3sVVrJr/Email.png" alt="E-mail image">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-size:200%"><b>E-mail</b></h5>
+                          <p class="card-text" style="font-size:110%; padding-bottom:5%">sandrosafar@hotmail.com</p>
+                          <a href="#" class="neonbutton-email">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Contact through e-mail
+                          </a>
+                        </div>
+                    </div>
 
 
 
-                    <!-- Personal Fiverr badge start -->
+                    <!-- Personal Fiverr badge start
 
                     <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block; float:right; padding-right:150px'>
                         <a itemprop='url' href=https://www.fiverr.com/sandro970 rel="nofollow" target="_blank" style='display: inline-block;'>
@@ -133,15 +154,10 @@
 
                     <script id='fiverr-seller-widget-script-e8a7bef8-8368-470d-9960-949593747a1c' src='https://widgets.fiverr.com/api/v1/seller/sandro970?widget_id=e8a7bef8-8368-470d-9960-949593747a1c' data-config='{"category_name":"Lifestyle"}' async='true' defer='true'></script>
 
-                    <!-- Personal Fiverr badge end -->
+                     Personal Fiverr badge end
                     <h5 style= "float:right; padding-left:50px; padding-right:400px; padding-top: 100px">  📱: +385 91 323 2334 <br> <br> </h5>
-                    <h5 style ="float:right; padding-left:100px; padding-right:300px">📧: sandrosafar@hotmail.com </h5>
+                    <h5 style ="float:right; padding-left:100px; padding-right:300px">📧: sandrosafar@hotmail.com </h5> -->
                 </div>
-
-                <div style="width:15%; margin: 20px 20px; margin-right: 20%;">
-                    <img style="border-radius:20px; margin: 10px 0;" src="https://i.ibb.co/FgR3ptj/crocoach.png">
-                </div>
-
             </div>
         </div>
     </div>
