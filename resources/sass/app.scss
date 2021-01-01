@@ -62,7 +62,6 @@ body {
 
 .title {
     font-weight: 900;
-    font-size: 200%;
     color:rgb(22, 66, 83);
 }
 
@@ -77,7 +76,6 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 40%;
     background: #eef0f1;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -97,7 +95,6 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 40%;
     background: #eef0f1;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -117,7 +114,6 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 40%;
     background: #eef0f1;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -273,12 +269,12 @@ a:hover span:nth-child(4) {
     opacity: 1;
 }
 
-.title {
+/* .title {
     font-weight: 900;
     color:rgb(241, 241, 241);
     text-align: center;
     margin-bottom: 7%;
-}
+} */
 
 .history-slika {
     border-radius: 20px;
@@ -287,4 +283,9 @@ a:hover span:nth-child(4) {
 
 .row {
     height: 300px;
+}
+
+.text {
+    font-size: 20px;
+    color: rgb(22, 66, 83);
 }
