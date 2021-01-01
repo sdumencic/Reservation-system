@@ -21,6 +21,7 @@ body {
     background-repeat: no-repeat;
     height: 100%;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /*.slika {
@@ -61,7 +62,6 @@ body {
 
 .title {
     font-weight: 900;
-    font-size: 200%;
     color:rgb(22, 66, 83);
 }
 
@@ -76,7 +76,6 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 40%;
     background: #eef0f1;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -96,7 +95,6 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 40%;
     background: #eef0f1;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -116,7 +114,6 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: 40%;
     background: #eef0f1;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -233,5 +230,62 @@ a:hover span:nth-child(4) {
 
   .chessicon2 {
       background-color: black;
-
   }
+
+  .fade-in {
+      opacity: 0;
+      transition: opacity 250ms ease-in;
+  }
+
+  .fade-in.appear {
+      opacity: 1;
+  }
+
+  .right {
+      text-align: right;
+  }
+
+  .margin20 {
+      margin-bottom: 12%;
+  }
+
+  .from-left {
+      grid-column: 2/3;
+      transform: translateX(-50%);
+  }
+
+  .from-right {
+    grid-column: 3/4;
+    transform: translateX(50%);
+}
+
+.from-left, .from-right {
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+}
+
+.from-left.appear, .from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* .title {
+    font-weight: 900;
+    color:rgb(241, 241, 241);
+    text-align: center;
+    margin-bottom: 7%;
+} */
+
+.history-slika {
+    border-radius: 20px;
+    height: 300px;
+}
+
+.row {
+    height: 300px;
+}
+
+.text {
+    font-size: 20px;
+    color: rgb(22, 66, 83);
+}
