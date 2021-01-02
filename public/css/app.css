@@ -11199,3 +11199,12 @@ a:hover span:nth-child(4) {
   background-color: white;
 }
 
+.text-white {
+  color: white;
+}
+
+.text-white-strong {
+  color: white;
+  font-weight: 900;
+}
+
