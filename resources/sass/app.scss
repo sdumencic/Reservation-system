@@ -1,23 +1,27 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
-    height: 100%
+    height: 100%;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(rgb(22, 66, 83), rgb(2, 0, 112), rgb(22, 56, 83));
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(
+        rgb(22, 66, 83),
+        rgb(2, 0, 112),
+        rgb(22, 56, 83)
+    );
     background-repeat: no-repeat;
     height: 100%;
     background-attachment: fixed;
@@ -62,7 +66,7 @@ body {
 
 .title {
     font-weight: 900;
-    color:rgb(22, 66, 83);
+    color: rgb(22, 66, 83);
 }
 
 .icons {
@@ -80,7 +84,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
-    padding:5%;
+    padding: 5%;
     color: #14db0d;
     text-transform: unset;
     letter-spacing: 2px;
@@ -88,7 +92,7 @@ body {
     font-size: 150%;
     overflow: hidden;
     transition: 0.2s;
-    --main-color:#14db0d;
+    --main-color: #14db0d;
 }
 
 .neonbutton-discord {
@@ -99,7 +103,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
-    padding:5%;
+    padding: 5%;
     color: #573de4;
     text-transform: unset;
     letter-spacing: 2px;
@@ -107,7 +111,7 @@ body {
     font-size: 150%;
     overflow: hidden;
     transition: 0.2s;
-    --main-color:#573de4;
+    --main-color: #573de4;
 }
 
 .neonbutton-email {
@@ -118,7 +122,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
-    padding:5%;
+    padding: 5%;
     color: #00a8f3;
     text-transform: unset;
     letter-spacing: 2px;
@@ -126,14 +130,15 @@ body {
     font-size: 150%;
     overflow: hidden;
     transition: 0.2s;
-    --main-color:#00a8f3;
+    --main-color: #00a8f3;
 }
 
 a:hover {
     color: #ffffff;
     text-decoration: none;
     background: var(--main-color);
-    box-shadow: 0 0 20pxvar(--main-color), 0 0 40px var(--main-color), 0 0 80px var(--main-color);
+    box-shadow: 0 0 20pxvar (--main-color), 0 0 40px var(--main-color),
+        0 0 80px var(--main-color);
     transition-delay: 1s;
 }
 
@@ -146,7 +151,7 @@ a span:nth-child(1) {
     left: -100%;
     width: 100%;
     height: 4px;
-    background:linear-gradient(90deg, transparent,var(--main-color))
+    background: linear-gradient(90deg, transparent, var(--main-color));
 }
 
 a:hover span:nth-child(1) {
@@ -159,7 +164,7 @@ a span:nth-child(3) {
     right: -100%;
     width: 100%;
     height: 4px;
-    background:linear-gradient(270deg, transparent, var(--main-color))
+    background: linear-gradient(270deg, transparent, var(--main-color));
 }
 
 a:hover span:nth-child(3) {
@@ -173,7 +178,7 @@ a span:nth-child(2) {
     right: 0;
     width: 4px;
     height: 100%;
-    background:linear-gradient(180deg, transparent, var(--main-color))
+    background: linear-gradient(180deg, transparent, var(--main-color));
 }
 
 a:hover span:nth-child(2) {
@@ -187,7 +192,7 @@ a span:nth-child(4) {
     left: 0;
     width: 4px;
     height: 100%;
-    background:linear-gradient(360deg, transparent, var(--main-color))
+    background: linear-gradient(360deg, transparent, var(--main-color));
 }
 
 a:hover span:nth-child(4) {
@@ -199,9 +204,9 @@ a:hover span:nth-child(4) {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
-  }
+}
 
-  .grid-item {
+.grid-item {
     // border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
@@ -209,62 +214,63 @@ a:hover span:nth-child(4) {
     border-radius: 50%;
     width: 70px;
     height: 70px;
-  }
+}
 
-  .grid-item:hover {
-      transition: 1s;
-      transform: rotateY(360deg);
+.grid-item:hover {
+    transition: 1s;
+    transform: rotateY(360deg);
+}
 
-  }
+.chessicon {
+    width: 200%;
+    margin-top: -100%;
+    margin-left: -50%;
+    border-radius: 50%;
+}
 
-  .chessicon {
-      width: 200%;
-      margin-top: -100%;
-      margin-left: -50%;
-      border-radius: 50%;
-  }
+.chessicon1 {
+    background-color: white;
+}
 
-  .chessicon1 {
-      background-color: white;
-  }
+.chessicon2 {
+    background-color: black;
+}
 
-  .chessicon2 {
-      background-color: black;
-  }
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
 
-  .fade-in {
-      opacity: 0;
-      transition: opacity 250ms ease-in;
-  }
+.fade-in.appear {
+    opacity: 1;
+}
 
-  .fade-in.appear {
-      opacity: 1;
-  }
+.right {
+    text-align: right;
+}
 
-  .right {
-      text-align: right;
-  }
+.margin20 {
+    margin-bottom: 12%;
+}
 
-  .margin20 {
-      margin-bottom: 12%;
-  }
+.from-left {
+    grid-column: 2/3;
+    transform: translateX(-50%);
+}
 
-  .from-left {
-      grid-column: 2/3;
-      transform: translateX(-50%);
-  }
-
-  .from-right {
+.from-right {
     grid-column: 3/4;
     transform: translateX(50%);
 }
 
-.from-left, .from-right {
+.from-left,
+.from-right {
     transition: opacity 250ms ease-in, transform 400ms ease-in;
     opacity: 0;
 }
 
-.from-left.appear, .from-right.appear {
+.from-left.appear,
+.from-right.appear {
     transform: translateX(0);
     opacity: 1;
 }
@@ -292,4 +298,28 @@ a:hover span:nth-child(4) {
 
 .btn-white {
     border: 4px solid rgb(0, 168, 243);
+}
+
+.chessicon-login {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    bottom: -40px;
+}
+
+.chessicon1-login {
+    background-color: white;
+}
+
+.text-white {
+    color: rgb(255, 255, 255);
+}
+
+.text-white-strong {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
 }
