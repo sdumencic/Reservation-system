@@ -11184,3 +11184,27 @@ a:hover span:nth-child(4) {
   color: #164253;
 }
 
+.chessicon-login {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  bottom: -40px;
+}
+
+.chessicon1-login {
+  background-color: white;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-white-strong {
+  color: white;
+  font-weight: 900;
+}
+
