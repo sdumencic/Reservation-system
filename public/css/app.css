@@ -11212,3 +11212,8 @@ a:hover span:nth-child(4) {
   font-weight: 900;
 }
 
+.navbar-card {
+  color: #164253 !important;
+  font-weight: 900 !important;
+}
+
