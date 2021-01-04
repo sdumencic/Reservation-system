@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/history', function () {
+    return view('history');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
