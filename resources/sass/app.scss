@@ -11,8 +11,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 html {
-    height: 100%;
+    /* height: 100%; */
 }
 
 body {
@@ -22,9 +24,9 @@ body {
         rgb(2, 0, 112),
         rgb(22, 56, 83)
     );
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     height: 100%;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     overflow-x: hidden;
 }
 
@@ -328,3 +330,77 @@ a:hover span:nth-child(4) {
     color: rgb(22, 66, 83) !important;
     font-weight: 900 !important;
 }
+
+.testimonials {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 7%;
+}
+
+.testimonials-f {
+    color: rgb(0, 0, 0);
+    padding-top: 2%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 90%;
+}
+
+.testimonials-comment {
+    /* font-style: italic; */
+    font-family: "Courgette", cursive;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.testimonials-card {
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    background-color: rgb(226, 226, 226);
+    padding: 40px;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.testimonials-height {
+    height: auto;
+}
+
+.img-text {
+}
+
+.col {
+    width: 50%;
+}
+
+.carousel-item {
+    display: flex;
+}
+
+.circle {
+    background-color: rgb(241, 241, 241);
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(22, 66, 83);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 168, 243);
+  }
