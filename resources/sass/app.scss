@@ -238,19 +238,6 @@ a:hover span:nth-child(4) {
     background-color: black;
 }
 
-.fade-in {
-    opacity: 0;
-    transition: opacity 250ms ease-in;
-}
-
-.fade-in.appear {
-    opacity: 1;
-}
-
-.right {
-    text-align: right;
-}
-
 .margin20 {
     margin-bottom: 12%;
 }
@@ -258,11 +245,13 @@ a:hover span:nth-child(4) {
 .from-left {
     grid-column: 2/3;
     transform: translateX(-50%);
+    text-align: left;
 }
 
 .from-right {
     grid-column: 3/4;
     transform: translateX(50%);
+    text-align: right;
 }
 
 .from-left,
