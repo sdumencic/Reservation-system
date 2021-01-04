@@ -238,15 +238,6 @@ a:hover span:nth-child(4) {
     background-color: black;
 }
 
-.fade-in {
-    opacity: 0;
-    transition: opacity 250ms ease-in;
-}
-
-.fade-in.appear {
-    opacity: 1;
-}
-
 .right {
     text-align: right;
 }
