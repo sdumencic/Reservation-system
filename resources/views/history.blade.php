@@ -46,7 +46,7 @@
                         Southern Europe.
                         In Europe, chess evolved into roughly its current form in the 15th century.
                     </div>
-                    <div class="col-sm right slide-in from-right">
+                    <div class="col-sm slide-in from-right">
                         <img class="history-slika" src="https://i.ibb.co/jhkxgkS/chaturanga.jpg" alt="chaturanga">
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     <div class="col-sm slide-in from-left">
                         <img class="history-slika" src="https://i.ibb.co/1sf1Tbn/Shatranj.jpg" alt="Shatranj">
                     </div>
-                    <div class="col-sm right slide-in from-right">
+                    <div class="col-sm slide-in from-right">
                         In 6th century the game of chatrang is mensiond in Persian Empire.
                         When Arabs conquered persia, chess spread to the Arab world where the name changed to
                         shatranj.
@@ -73,7 +73,7 @@
                         written by
                         the Spanish chess player Lucena.
                     </div>
-                    <div class="col-sm right slide-in from-right">
+                    <div class="col-sm slide-in from-right">
                         <img class="history-slika" src="https://i.ibb.co/QJf11Pq/Schachuhr-mechanisch.jpg"
                             alt="Schachuhr-mechanisch">
                     </div>
@@ -84,7 +84,7 @@
                             src="https://i.ibb.co/h1CCcJD/19394-4e3bb975-5000x5000o-52f065f76553.jpg"
                             alt="19394-4e3bb975-5000x5000o-52f065f76553">
                     </div>
-                    <div class="col-sm right slide-in from-right">
+                    <div class="col-sm slide-in from-right">
                         Competitive chess started in 1834 with La Bourdonnai-McDonnel matches and 1851 London
                         Chess
                         tournament.
@@ -109,7 +109,7 @@
                         over four
                         months, Kasparov won the game.
                     </div>
-                    <div class="col-sm right slide-in from-right">
+                    <div class="col-sm slide-in from-right">
                         <img class="history-slika" src="https://i.ibb.co/GWfJ3Pk/kasparov.jpg" alt="kasparov">
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                             src="https://i.ibb.co/z2LNzwG/London-Chess-Classic-2010-Calsen-02.jpg"
                             alt="London-Chess-Classic-2010-Calsen-02">
                     </div>
-                    <div class="col-sm right slide-in from-right">
+                    <div class="col-sm slide-in from-right">
                         The current World Chess Champion in Magnus Carlsen from Norway.
                         His highest ELO is 2882 which is the highest rating someone ever had in the history of
                         chess.
