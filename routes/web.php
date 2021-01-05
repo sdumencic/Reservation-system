@@ -24,3 +24,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('/history', function () {
     return view('history');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
