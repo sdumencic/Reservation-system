@@ -16,7 +16,7 @@
                         <p class="card-text" style="font-size:110%; padding-bottom:10%">Main page with reviews</p>
 
                         <a href="https://www.fiverr.com/sandro970/provide-high-quality-chess-lessons"
-                            class="neonbutton-fiverr">
+                            class="neonbutton-fiverr contact">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -33,7 +33,7 @@
                         <h5 class="card-title" style="font-size:200%"><b>Discord</b></h5>
                         <p class="card-text" style="font-size:110%; padding-bottom:10%">Sandro970#4008</p>
 
-                        <a href="https://discord.gg/jfMU9gQ2y7" class="neonbutton-discord">
+                        <a href="https://discord.gg/jfMU9gQ2y7" class="neonbutton-discord contact">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -50,7 +50,7 @@
                         <h5 class="card-title" style="font-size:200%"><b>E-mail</b></h5>
                         <p class="card-text" style="font-size:110%; padding-bottom:10%">sandrosafar@hotmail.com</p>
 
-                        <a href="mailto:sandrosafar@hotmail.com" class="neonbutton-email">
+                        <a href="mailto:sandrosafar@hotmail.com" class="neonbutton-email contact">
                             <span></span>
                             <span></span>
                             <span></span>
