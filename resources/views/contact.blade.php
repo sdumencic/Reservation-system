@@ -2,7 +2,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2" style="display:flex; background-color:rgba(179, 179, 179, 0.7);">
         <div class="jumbotron"
             style="margin:2rem; width: 100%; background-color:rgb(241, 241, 241); text-align:center;">
-            <h1 class="display-4 title">Contacts</h1>
+            <h1 class="display-4 title title-shadow">Contacts</h1>
             <p class="lead" style="font-size: 150%">Feel free to contact me with any questions!</p>
             <hr class="my-4">
 
