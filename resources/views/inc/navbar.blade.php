@@ -14,6 +14,9 @@
             <li class="nav-item">
                 <a class="nav-link navbar-card" href="/contact">Contact</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-card" href="/about">About</a>
+            </li>
         </ul>
         @if (Route::has('login'))
             <div class="">

@@ -131,7 +131,7 @@
             <h1 class="display-4 title" style="margin-top:-20px; padding:20px">Your journey to becoming a chess
                 master awaits</h1>
 
-            <a href="/contact" class="neonbutton-email btn-white" style="padding:2%">
+            <a href="/contact" class="neonbutton-email btn-white contact" style="padding:2%">
                 <span></span>
                 <span></span>
                 <span></span>
