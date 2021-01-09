@@ -37,10 +37,10 @@
                 style="display:flex; background-color:rgba(179, 179, 179, 0.7);">
                 <div class="jumbotron"
                     style="margin:2rem; width: 100%; background-color:rgb(241, 241, 241); text-align:center;">
-                    <h1 class="display-4" style="font-weight:900; color:rgb(22, 66, 83)">CroCoach</h1>
+                    <h1 class="display-4 title-shadow" style="font-weight:900; color:rgb(22, 66, 83)">CroCoach</h1>
                     <p class="lead">Chess Lessons</p>
                     <hr class="my-4">
-                    <a class="btn btn-lg" href="/contact" role="button"
+                    <a class="btn btn-lg" href="/about" role="button"
                         style="background-color:rgb(22, 66, 83); color:white; margin-top:20px;">Meet Sandro</a>
                 </div>
                 <div style="width:20%; margin: 20px 20px; margin-right: 20%;">
