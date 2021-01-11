@@ -15,10 +15,14 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
             $table->string('title');
             $table->dateTime('start');
             $table->dateTime('end');
-            $table->timestamps();
+            $table->integer('allday');
+            $table->string('color');
+            $table->string('textColor');
+            $table->foreignId('user_id')->constrained('users');
         });
     }
 
@@ -29,6 +33,10 @@ class CreateEventsTable extends Migration
      */
     public function down()
     {
+        Schema::table('events', function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
+            $table->dropColumn('user_id');
+        });
         Schema::dropIfExists('events');
     }
 }

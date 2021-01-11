@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FullCalendarController;
 
@@ -34,13 +35,14 @@ Route::get('/about', function () {
     return view('about');
 });
 
-//fullcalender
 Route::get('/user/{id}', [UserController::class, 'show']);
 
-
+//fullcalender
 Route::get('fullcalendar', [FullCalendarController::class, 'index']);
 Route::post('fullcalendar/create', [FullCalendarController::class, 'create']);
 Route::post('fullcalendar/update', [FullCalendarController::class, 'update']);
 Route::post('fullcalendar/delete', [FullCalendarController::class, 'destroy']);
 
-//Route::resource('fullcalendar', FullCalendarController::class)->except(['show', 'edit', 'create']);
+// Events
+Route::get('events', [EventController::class, 'index'])->name('events.index');
+Route::post('events', [EventController::class, 'addEvent'])->name('events.add');
