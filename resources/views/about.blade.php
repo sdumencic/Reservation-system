@@ -8,33 +8,52 @@
                 <h6 class="display-4 title title-shadow" style = "font-size:175%;margin-bottom: 1%">Need some structured guidance?</h6>
                 <br>
                 <div class = "about-me-grid" style = "margin: 2%">
-                    <div class = "about-me-grid-item box" style = "margin-left: 5%; width: 100%; height: 100%;">
+                    <div class = "about-me-grid-item box" style = " width: 100%; height: 100%;">
                         <div class = "box-fill">
                             <div class = "content">
                                 <h2 class = "display-4 meet-me" style="font-weight:600; font-size: 350%">Meet Sandro</h2>
                                 <p class = "lead">Computer science student, chess player and chess coach</p>
                                 <hr style="border:1px solid white">
-                                <p>
-                                <h3 class = "meet-me" style="margin-bottom: 2%; color:rgb(18,140,240)"><b> Welcome! </b> </h3>
-                                My name is Sandro, I am a 21 year old student from Croatia and I'm here to help <b> YOU </b> improve your chess game! <br><br>
-                                It has always been my dream to be able to help people reach their <b>goals</b> which is why I'm thrilled to be able to do so by also sharing my passion! <br> <br>
 
-                                <b class = "meet-me" style="color:rgb(18,140,240)">My mission is to help <b style="font-size:130%">you</b> reach your goals in chess! </b><br><br>
+                                <h3 class = "meet-me" style="color:rgb(18,140,240)"><b> Welcome! </b> </h3>
+                                My name is Sandro, I am a 21 year old student from Croatia and I'm here to help <b> YOU </b> improve your chess game! <br>
+                                It has always been my dream to help people reach their <b>goals</b> which is why I'm thrilled to be able to do so by also sharing my passion! <br> <br>
+                                Whether your goal is to learn the logic behind the game, enjoy the beauty of the game, beat some friends, break a rating barrier
+                                or get into tournaments and travel the world - you will reach your goals in no time!<br>
+                                The experience I've gotten so far allowed me to recognize some typical problems that <b style="color:red">stop</b> your rating from skyrocketing!<br><br>
 
-                                Whether your goal is to learn the logic behind the game, enjoy the beauty of the game, beat a friend or get into tournaments to travel the world - you will reach your goals in no time!
-                                </p>
+                                <b class = "meet-me" style="color:rgb(18,140,240)">My mission is to help <b style="font-size:120%;">you</b> reach your chess goals! </b>
+                                <br>
+                                <hr style = "border: 1px solid white">
+
+
+                                <p style = "text-align: left; font-size: 120%"> If you are interested in: </p>
+                                <ul style = "text-align: left">
+                                    <li> The methods and questions used to never run out of logical moves to play in any part of the game </li>
+                                    <li> What it's like to be taken step-by-step through a journey across the rating ladder </li>
+                                    <li> Learning how to play with confidence and comfort using chess principles</li>
+                                    <li> Discovering new thinking patterns that help you know what you're aiming to achieve </li>
+                                    <li> How it feels like to have a mentor by your side who is available 24/7 to any of your inquiries </li>
+                                    <li> Why it's important to have a coach rather than "figure it out yourself" or "just look it up on the internet" </li>
+                                </ul>
+                                <p style = "text-align: left; font-size: 120%">Then look no further! I'll teach you the opening, middlegame, endgame, tactics and strategy. Just about everything.<br> </p>
+
+                                <hr style="border:1px solid white">
+                                <p class = "meet-me" style = "position: relative; top: 10px; font-size: 150%">Let me prove to you why I'm so confident I can solve these problems for you </p>
+
+
                             </div>
                         </div>
                     </div>
 
-                    <div class = "about-me-grid-item" style = "margin-left: 10%; width:80%">
+                    <div class = "about-me-grid-item" style = "margin-left: 5%; width:95%">
                         <img class = "my-image" src="https://i.ibb.co/0mRQR5v/Me2.jpg">
                     </div>
 
                     <div class = "about-me-grid-item-two-columns" style = "text-align:left">
-                        <h1 class = "display-4 title" style="margin-top:5%;margin-bottom:2%;text-decoration:underline" >Credentials</h1>
+                        <h1 class = "display-4 title title-shadow" style="margin-top:5%;margin-bottom:2%;text-decoration:underline" >Credentials</h1>
                         <br>
-                        <h3 class = "title title-shadow" style = "text-align: center; font-size: 400%; margin-bottom: 0%"> What makes me qualified to solve your problems?</h3>
+                        <h3 class = "title title-shadow" style = "text-align: center; font-size: 360%; margin-bottom: 0%"> What makes me qualified to solve your problems?</h3>
                         <div class = "credentials-list">
 
                             <ul style="font-size:150%; line-height:200%; margin-top: 1%; padding: 30px">
@@ -52,7 +71,7 @@
                     </div>
 
                     <div class = "about-me-grid-item-two-columns">
-                        <h1 class = "display-4 title" style="margin-top: 3%; margin-bottom: 0% ;text-decoration:underline; text-align:left;">Testimonials</h1>
+                        <h1 class = "display-4 title title-shadow" style="margin-top: 3%; margin-bottom: 0% ;text-decoration:underline; text-align:left;">Testimonials</h1>
                     </div>
                     <div class = "about-me-grid-item-two-columns">
                         <div class = "slider-area">
@@ -191,7 +210,7 @@
                         </div>
                     </div>
                     <div class = "about-me-grid-item-two-columns" style = "margin-top: 5%; margin-bottom: -2%">
-                        <p class = "display-4 title" style="margin:0%">Are you ready to transform <b>YOUR</b> chess game?</p>
+                        <p class = "display-4 title title-shadow" style="margin:0%; margin-bottom: 1%">Are you ready to transform <b>YOUR</b> chess game?</p>
                     </div>
                     <div class = "about-me-grid-item-two-columns" style = "height: 150px">
                         <a class="opt-in-button" href="http://reservationsystem.test/contact">
