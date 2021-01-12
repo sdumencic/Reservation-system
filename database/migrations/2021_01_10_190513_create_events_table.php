@@ -19,7 +19,6 @@ class CreateEventsTable extends Migration
             $table->string('title');
             $table->dateTime('start');
             $table->dateTime('end');
-            $table->integer('allday');
             $table->string('color');
             $table->string('textColor');
             $table->foreignId('user_id')->constrained('users');

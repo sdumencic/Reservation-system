@@ -25,13 +25,15 @@ const dateClick = info => {
         alert("Switch to Week view to add appointments.");
         return;
     }
-    // TODO: Hendlanje formica i gluposti
+    // TODO: Hendlanje forma
     console.log(info);
 
     // Set the information
     options.title = "Basic Package";
-    options.start = new moment(info.date).format('DD.MM.YYYY HH:mm:ss [GMT] Z');
-    options.end = new moment(info.date).add(1, 'hour').format('DD.MM.YYYY HH:mm:ss [GMT] Z');
+    /* options.start = new moment(info.date).format('DD.MM.YYYY HH:mm:ss [GMT] Z');
+    options.end = new moment(info.date).add(1, 'hour').format('DD.MM.YYYY HH:mm:ss [GMT] Z'); */
+    options.start = new moment(info.date).format('YYYY-MM-DD HH:mm:ss');
+    options.end = new moment(info.date).add(1, 'hour').format('YYYY-MM-DD HH:mm:ss');
     options.userIf = 0;
 
     // Show the modal
@@ -74,6 +76,17 @@ export const renderTimeGridView = () => {
         dayHeaderContent: (args) => {
             return moment(args.date).format('ddd D.MM.')
         },
+
+        /* dayClick: function(date, event, view) {
+            $('#dialog').dialog({
+                title: 'Add Event',
+                width: 600,
+                height: 700,
+                modal: true,
+                show: {effect: 'clip', duration: 350},
+                hide: {effect: 'clip', duration: 250}
+            })
+        }, */
 
         slotLabelFormat: {
             hour: 'numeric',

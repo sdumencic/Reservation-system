@@ -18,9 +18,12 @@ class Event extends Model
         'title',
         'start',
         'end',
-        'allDay',
         'color',
         'textColor',
         'user_id',
     ];
+
+    public function user() {
+        return $this->belongsTo('App\Models\User');
+    }
 }

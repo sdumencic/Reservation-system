@@ -35,14 +35,6 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/user/{id}', [UserController::class, 'show']);
-
-//fullcalender
-Route::get('fullcalendar', [FullCalendarController::class, 'index']);
-Route::post('fullcalendar/create', [FullCalendarController::class, 'create']);
-Route::post('fullcalendar/update', [FullCalendarController::class, 'update']);
-Route::post('fullcalendar/delete', [FullCalendarController::class, 'destroy']);
-
 // Events
 Route::get('events', [EventController::class, 'index'])->name('events.index');
-Route::post('events', [EventController::class, 'addEvent'])->name('events.add');
+Route::post('events/add', [EventController::class, 'store'])->name('events.add');

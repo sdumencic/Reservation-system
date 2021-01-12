@@ -16,41 +16,57 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::get();
-        $event_list = [];
-        foreach ($events as $key => $event) {
-            $event_list[] = Calendar::event(
-                $event->event_name,
-                true,
-                new \DateTime($event->start_date),
-                new \DateTime($event->end_date . ' +1 day')
-            );
+        if (!Auth::user()) {
+            return redirect('/');
         }
-        $calendar = Calendar::addEvents($event_list);
 
-        return view('events', compact('calendar'));
+        $event = Event::orderBy('start', 'asc')->paginate(12);
+        return view('events')->with('events', $event);
     }
 
-    public function addEvent(Request $request)
+    public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'event_name' => 'required',
-            'start_date' => 'required',
-            'end_date' => 'required'
-        ]);
-
-        if ($validator->fails()) {
-            \Session::flash('warnning', 'Please enter the valid details');
-            return Redirect::to('/events')->withInput()->withErrors($validator);
+        if (!Auth::user()) {
+            return redirect('/');
         }
 
+        $this->validate($request, [
+            'title' => 'required',
+            'start' => 'required',
+            'end' => 'required',
+            /* 'color' => 'required',
+            'textColor' => 'required', */
+        ]);
+
         $event = new Event;
-        $event->event_name = $request['event_name'];
-        $event->start_date = $request['start_date'];
-        $event->end_date = $request['end_date'];
+        $event->title = $request->input('title');
+        $event->start = $request->input('start');
+        $event->end = $request->input('end');
+        $event->user_id = auth()->user()->id;
+        $event->color = $request->input('color');
+        $event->textColor = $request->input('textColor');
         $event->save();
 
-        \Session::flash('success', 'Event added successfully.');
-        return Redirect::to('/events');
+        return redirect('/events')->with('success', 'Reservation Created');
+    }
+
+    public function edit($id)
+    {
+        $event = Event::find($id);
+        if (Auth::user()->hasAnyRole('admin') || (auth()->user()->id === $event->user_id)) {
+            return view('events')->with('events', $event);
+        }
+        return redirect('/events')->with('error', 'Unauthorized Page');
+    }
+
+    public function destroy($id)
+    {
+        $event = Event::find($id);
+        if (auth()->user()->id === $event->user_id || Auth::user()->hasAnyRole('admin')) {
+            $event->delete();
+            return redirect('/events')->with('success', 'Reservation Deleted');
+        }
+
+        return redirect('/events')->with('error', 'Unauthorized Page');
     }
 }
