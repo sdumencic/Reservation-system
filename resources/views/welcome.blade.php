@@ -83,14 +83,14 @@
                 </div>
             </div>
 
-        <h1 class="testimonials">Testimonials</h1>
+        <h1 class="testimonials title-shadow">Testimonials</h1>
         <div class="testimonials-f">
             <div class="row">
                 <div class="col-md-12">
                     <div class="row testimonials-height">
                         <div class="col">
                             <div class="single-box testimonials-card circle">
-                                <div class="img-area">img</div>
+                                <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                 <div class="img-text">
                                     <h2>Person one</h2>
                                     <p class="testimonials-comment">"Sandro and I began doing lessons at
@@ -114,7 +114,7 @@
                         </div>
                         <div class="col">
                             <div class="single-box testimonials-card circle">
-                                <div class="img-area">img</div>
+                                <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                 <div class="img-text">
                                     <h2>Person 2</h2>
                                     <p class="testimonials-comment">"Sandro is a chess prodigy. So far
@@ -133,7 +133,7 @@
                         </div>
                         <div class="col">
                             <div class="single-box testimonials-card circle">
-                                <div class="img-area">img</div>
+                                <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                 <div class="img-text">
                                     <h2>Person 3</h2>
                                     <p class="testimonials-comment">"This was my first Fiverr purchase.
