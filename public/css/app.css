@@ -10930,6 +10930,247 @@ body {
 
 }*/
 
+.pieces-above-packages-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.pieces-above-packages {
+  position: relative;
+  width: 11%;
+  height: auto;
+  margin-left: 13%;
+  margin-right: 9%;
+  float: left;
+}
+
+.packages-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.packages-box {
+  position: relative;
+  display: grid;
+}
+
+.packages-container .packages-box {
+  position: relative;
+  background: #687274;
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+  display: flex;
+  margin: 20px;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.packages-container .packages-box:hover {
+  background: #003366;
+}
+
+.packages-container .packages-box .packages-content {
+  display: grid;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.packages-container .packages-box .packages-content h2 {
+  position: absolute;
+  right: 4%;
+  top: 110px;
+  font-size: 300%;
+  color: #fff;
+  z-index: 1;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.packages-container .packages-box:hover .packages-content h2 {
+  opacity: 1;
+  font-weight: 800;
+  transform: translateY(-90px);
+}
+
+.packages-container .packages-box .packages-content h3 {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  color: #fff;
+  font-weight: 1200;
+  font-size: 300%;
+  margin-bottom: 1%;
+  z-index: 2;
+  opacity: 0.5;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.packages-container .packages-box .packages-content p {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  opacity: 0.5;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.packages-container .packages-box:hover .packages-content p,
+.packages-container .packages-box:hover .packages-content h3 {
+  opacity: 1;
+}
+
+.packages-container .packages-box .packages-span {
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.packages-container .packages-box:hover .packages-span {
+  opacity: 1;
+}
+
+.packages-container .packages-box .packages-span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  filter: blur(2px);
+  background: linear-gradient(to right, transparent, #0ff);
+  -webkit-animation: animate1 4s linear infinite;
+          animation: animate1 4s linear infinite;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.packages-container .packages-box .packages-span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  filter: blur(2px);
+  background: linear-gradient(to bottom, transparent, #0ff);
+  -webkit-animation: animate2 4s linear infinite;
+          animation: animate2 4s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.packages-container .packages-box .packages-span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  filter: blur(2px);
+  background: linear-gradient(to left, transparent, #0ff);
+  -webkit-animation: animate3 4s linear infinite;
+          animation: animate3 4s linear infinite;
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.packages-container .packages-box .packages-span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  filter: blur(2px);
+  background: linear-gradient(to top, transparent, #0ff);
+  -webkit-animation: animate4 4s linear infinite;
+          animation: animate4 4s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 .meet-me {
   background: linear-gradient(to right, #00ffff, #0bff48);
   -webkit-background-clip: text;
@@ -11045,7 +11286,7 @@ body {
 }
 
 .title-shadow {
-  text-shadow: 1px 2px #00ffff;
+  text-shadow: 1px 2px 7px #3293ba;
 }
 
 .slider-area {
