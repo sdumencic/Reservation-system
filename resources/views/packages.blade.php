@@ -286,7 +286,7 @@
                         <div class = "packages-content">
 
                             <h2 class = "title-shadow">$40<h2>
-                            <h3 class = "title" style = "font-size: 280%; margin-bottom: 1%">Going semi-pro <br>(> 1700)</h3>
+                            <h3 class = "title" style = "font-size: 260%; margin-bottom: 1%">Going semi-pro <br>(> 1700)</h3>
                             <p style = "margin-bottom: 0">Take your game to serious levels</p>
                             <hr style = "border:1px solid white; margin:0; padding:0; margin-bottom: 20px">
 
