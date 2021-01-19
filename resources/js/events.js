@@ -64,6 +64,25 @@ export const renderTimeGridView = () => {
         initialView: "timeGridWeek",
         height: 650,
         firstDay: 1,
+        eventDisplay: 'auto',
+        allDay: false,
+
+        events: [
+            {
+              title: 'Event1',
+              start: '2021-01-20',
+              color: 'yellow',   // an option!
+          textColor: 'black', // an option!
+            },
+            {
+              title: 'Event2',
+              start: '2021-01-19',
+              color: 'yellow',   // an option!
+          textColor: 'black', // an option!
+            }
+            // etc...
+          ],
+
 
         showNonCurrentDates: false,
         // Define Header Buttons
