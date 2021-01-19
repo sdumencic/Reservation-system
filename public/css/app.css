@@ -11539,3 +11539,14 @@ body {
   background-color: black;
 }
 
+a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end.fc-event-future:hover {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 10;
+}
+
+.fc-timegrid-event-harness:hover {
+  z-index: auto !important;
+}
+

@@ -39592,12 +39592,13 @@ module.exports = function(module) {
 /*!********************************!*\
   !*** ./resources/js/events.js ***!
   \********************************/
-/*! exports provided: renderTimeGridView */
+/*! exports provided: renderTimeGridView, addEvents */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderTimeGridView", function() { return renderTimeGridView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addEvents", function() { return addEvents; });
 /* harmony import */ var _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fullcalendar/core */ "./node_modules/@fullcalendar/core/main.js");
 /* harmony import */ var _fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fullcalendar/daygrid */ "./node_modules/@fullcalendar/daygrid/main.js");
 /* harmony import */ var _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fullcalendar/timegrid */ "./node_modules/@fullcalendar/timegrid/main.js");
@@ -39625,6 +39626,7 @@ var options = {
   end: "",
   userId: ""
 };
+var calendar = null;
 
 var _dateClick = function dateClick(info) {
   if (info.view.type !== "timeGridWeek") {
@@ -39639,8 +39641,8 @@ var _dateClick = function dateClick(info) {
   /* options.start = new moment(info.date).format('DD.MM.YYYY HH:mm:ss [GMT] Z');
   options.end = new moment(info.date).add(1, 'hour').format('DD.MM.YYYY HH:mm:ss [GMT] Z'); */
 
-  options.start = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).format('YYYY-MM-DD HH:mm:ss');
-  options.end = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).add(1, 'hour').format('YYYY-MM-DD HH:mm:ss');
+  options.start = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).format("YYYY-MM-DD HH:mm:ss");
+  options.end = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).add(1, "hour").format("YYYY-MM-DD HH:mm:ss");
   options.userIf = 0; // Show the modal
 
   $("#exampleModal").modal("show");
@@ -39657,31 +39659,15 @@ var renderTimeGridView = function renderTimeGridView() {
   // Fetch our Calendar DIV from the DOM
   var calendarEl = document.getElementById("calendar"); // Generate our Calendar Object
 
-  var calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["Calendar"](calendarEl, {
+  calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["Calendar"](calendarEl, {
     plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_1__["default"], _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_2__["default"], _fullcalendar_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_4__["default"]],
     themeSystem: "bootstrap",
     //standard/bootstrap
     initialView: "timeGridWeek",
     height: 650,
     firstDay: 1,
-    eventDisplay: 'auto',
+    eventDisplay: "auto",
     allDay: false,
-    events: [{
-      title: 'Event1',
-      start: '2021-01-20',
-      color: 'yellow',
-      // an option!
-      textColor: 'black' // an option!
-
-    }, {
-      title: 'Event2',
-      start: '2021-01-19',
-      color: 'yellow',
-      // an option!
-      textColor: 'black' // an option!
-
-    } // etc...
-    ],
     showNonCurrentDates: false,
     // Define Header Buttons
     headerToolbar: {
@@ -39691,7 +39677,7 @@ var renderTimeGridView = function renderTimeGridView() {
 
     },
     dayHeaderContent: function dayHeaderContent(args) {
-      return moment_timezone__WEBPACK_IMPORTED_MODULE_6__(args.date).format('ddd D.MM.');
+      return moment_timezone__WEBPACK_IMPORTED_MODULE_6__(args.date).format("ddd D.MM.");
     },
 
     /* dayClick: function(date, event, view) {
@@ -39705,8 +39691,8 @@ var renderTimeGridView = function renderTimeGridView() {
         })
     }, */
     slotLabelFormat: {
-      hour: 'numeric',
-      minute: '2-digit',
+      hour: "numeric",
+      minute: "2-digit",
       meridiem: false,
       hour12: false
     },
@@ -39722,6 +39708,30 @@ var renderTimeGridView = function renderTimeGridView() {
   }); // Render the Calendar Object
 
   calendar.render();
+};
+var addEvents = function addEvents(events) {
+  /* calendar.addEventSource([
+      {
+          title: "Event1",
+          start: "2021-01-20",
+          color: "yellow", // an option!
+          textColor: "black" // an option!
+      },
+      {
+          title: "Event2",
+          start: "2021-01-19",
+          color: "yellow", // an option!
+          textColor: "black" // an option!
+      },
+      {
+          title: "Basic Package",
+          start: "2021-01-22 11:00:00",
+          end: "2021-01-22 15:00:00",
+          color: "#123456",
+          textColor: "pink"
+      }
+  ]); */
+  calendar.addEventSource(events);
 }; // CODE ///////////////////////////////////////////////////////////////////////
 
 /***/ }),

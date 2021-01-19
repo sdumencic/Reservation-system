@@ -48,13 +48,12 @@
                         <form id="dayClick" method="post" action="{{ route('events.add') }}">
                             @csrf
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Title:</label>
-                                <input type="text" class="form-control" id="title" name="title">
-                                {{-- <select id="packages" name="packages">
-                                    <option value="basic">Basic package</option>
-                                    <option value="standard">Standard package</option>
-                                    <option value="premium" selected>Premium Package</option>
-                                    <input type="submit" class="form-control" id="title"> --}}
+                                <label for="recipient-name" class="col-form-label">Package:</label>
+                                <select class="custom-select" id="packages" name="title">
+                                    <option value="Casual Package">Casual Package</option>
+                                    <option selected value="Serious Package">Serious Package</option>
+                                    <option value="Commited Package">Commited Package</option>
+                                  </select>
                             </div>
                             <div class="form-group">
                                 <label for="message-text" class="col-form-label">Start:</label>
@@ -89,8 +88,25 @@
 
     @push('scripts')
         <script>
-            $(document).ready(renderTimeGridView);
+            $(document).ready(function() {
+                renderTimeGridView();
+                addEvents(
+                [@foreach ($events as $event)
+                    @php
+                        echo "{"
+                    @endphp
 
+                        title: "{{$event->user->name}} - {{$event->title}}",
+                        start: "{{$event->start}}",
+                        end: "{{$event->end}}",
+                        color: "{{$event->color}}",
+                        textColor: "{{$event->textColor}}",
+
+                    @php
+                        echo "},"
+                    @endphp
+                @endforeach]);
+            })
         </script>
     @endpush
 </x-calendar-layout>

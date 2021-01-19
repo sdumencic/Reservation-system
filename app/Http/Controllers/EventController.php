@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Controller;
@@ -20,7 +21,12 @@ class EventController extends Controller
             return redirect('/');
         }
 
-        $event = Event::orderBy('start', 'asc')->paginate(12);
+        if(Auth::user()->hasAnyRole('admin')) {
+            $event = Event::all();//Event::orderBy('start', 'asc')->paginate(12);
+        } else {
+            $event = Event::where('user_id', Auth::user()->id)->get();
+        }
+
         return view('events')->with('events', $event);
     }
 
@@ -30,12 +36,14 @@ class EventController extends Controller
             return redirect('/');
         }
 
+        $this->allslots=array('Casual Package', 'Serious Package', 'Commited Package');
+
         $this->validate($request, [
-            'title' => 'required',
+            'title' => ['required', 'string', 'max:255', Rule::in($this->allslots)],
             'start' => 'required',
             'end' => 'required',
-            /* 'color' => 'required',
-            'textColor' => 'required', */
+            'color' => 'required',
+            'textColor' => 'required',
         ]);
 
         $event = new Event;

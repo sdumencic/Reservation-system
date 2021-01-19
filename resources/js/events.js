@@ -8,7 +8,7 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import bootstrapPlugin from "@fullcalendar/bootstrap";
 import interactionPlugin from "@fullcalendar/interaction";
 import "@fortawesome/fontawesome-free/css/all.css";
-import * as moment from 'moment-timezone';
+import * as moment from "moment-timezone";
 
 // IMPORTS ////////////////////////////////////////////////////////////////////
 
@@ -19,6 +19,8 @@ let options = {
     end: "",
     userId: ""
 };
+
+let calendar = null;
 
 const dateClick = info => {
     if (info.view.type !== "timeGridWeek") {
@@ -32,8 +34,10 @@ const dateClick = info => {
     options.title = "Basic Package";
     /* options.start = new moment(info.date).format('DD.MM.YYYY HH:mm:ss [GMT] Z');
     options.end = new moment(info.date).add(1, 'hour').format('DD.MM.YYYY HH:mm:ss [GMT] Z'); */
-    options.start = new moment(info.date).format('YYYY-MM-DD HH:mm:ss');
-    options.end = new moment(info.date).add(1, 'hour').format('YYYY-MM-DD HH:mm:ss');
+    options.start = new moment(info.date).format("YYYY-MM-DD HH:mm:ss");
+    options.end = new moment(info.date)
+        .add(1, "hour")
+        .format("YYYY-MM-DD HH:mm:ss");
     options.userIf = 0;
 
     // Show the modal
@@ -53,7 +57,7 @@ export const renderTimeGridView = () => {
     let calendarEl = document.getElementById("calendar");
 
     // Generate our Calendar Object
-    var calendar = new Calendar(calendarEl, {
+    calendar = new Calendar(calendarEl, {
         plugins: [
             dayGridPlugin,
             timeGridPlugin,
@@ -64,25 +68,8 @@ export const renderTimeGridView = () => {
         initialView: "timeGridWeek",
         height: 650,
         firstDay: 1,
-        eventDisplay: 'auto',
+        eventDisplay: "auto",
         allDay: false,
-
-        events: [
-            {
-              title: 'Event1',
-              start: '2021-01-20',
-              color: 'yellow',   // an option!
-          textColor: 'black', // an option!
-            },
-            {
-              title: 'Event2',
-              start: '2021-01-19',
-              color: 'yellow',   // an option!
-          textColor: 'black', // an option!
-            }
-            // etc...
-          ],
-
 
         showNonCurrentDates: false,
         // Define Header Buttons
@@ -92,8 +79,8 @@ export const renderTimeGridView = () => {
             end: "timeGridWeek,dayGridMonth" // timeGridWeek,dayGridMonth
         },
 
-        dayHeaderContent: (args) => {
-            return moment(args.date).format('ddd D.MM.')
+        dayHeaderContent: args => {
+            return moment(args.date).format("ddd D.MM.");
         },
 
         /* dayClick: function(date, event, view) {
@@ -108,8 +95,8 @@ export const renderTimeGridView = () => {
         }, */
 
         slotLabelFormat: {
-            hour: 'numeric',
-            minute: '2-digit',
+            hour: "numeric",
+            minute: "2-digit",
             meridiem: false,
             hour12: false
         },
@@ -129,4 +116,30 @@ export const renderTimeGridView = () => {
     // Render the Calendar Object
     calendar.render();
 };
+
+export const addEvents = (events) => {
+    /* calendar.addEventSource([
+        {
+            title: "Event1",
+            start: "2021-01-20",
+            color: "yellow", // an option!
+            textColor: "black" // an option!
+        },
+        {
+            title: "Event2",
+            start: "2021-01-19",
+            color: "yellow", // an option!
+            textColor: "black" // an option!
+        },
+        {
+            title: "Basic Package",
+            start: "2021-01-22 11:00:00",
+            end: "2021-01-22 15:00:00",
+            color: "#123456",
+            textColor: "pink"
+        }
+    ]); */
+
+    calendar.addEventSource(events);
+}
 // CODE ///////////////////////////////////////////////////////////////////////
