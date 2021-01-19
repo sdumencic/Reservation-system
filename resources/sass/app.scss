@@ -145,7 +145,7 @@ body {
 .pieces-above-packages-container {
     width: 100%;
     height: 200px;
-    overflow:hidden;
+    overflow: hidden;
 }
 .pieces-above-packages {
     position: relative;
@@ -181,7 +181,6 @@ body {
 .packages-container .packages-box:hover {
     background: rgb(0, 51, 102);
 }
-
 
 .packages-container .packages-box .packages-content {
     display: grid;
@@ -259,7 +258,6 @@ body {
     filter: blur(2px);
     background: linear-gradient(to right, transparent, #0ff);
     animation: animate1 4s linear infinite;
-
 }
 
 @keyframes animate1 {
@@ -284,7 +282,6 @@ body {
 }
 
 @keyframes animate2 {
-
     0% {
         transform: translateY(-100%);
     }
@@ -300,7 +297,7 @@ body {
     width: 100%;
     height: 5px;
     filter: blur(2px);
-    background: linear-gradient(to left, transparent,#0ff);
+    background: linear-gradient(to left, transparent, #0ff);
     animation: animate3 4s linear infinite;
 }
 
@@ -320,7 +317,7 @@ body {
     width: 5px;
     height: 100%;
     filter: blur(2px);
-    background: linear-gradient(to top, transparent,#0ff);
+    background: linear-gradient(to top, transparent, #0ff);
     animation: animate4 4s linear infinite;
     animation-delay: 2s;
 }
@@ -1009,7 +1006,7 @@ body {
 }
 
 .btn-dashboard:hover {
-    background-color:  rgba(22, 66, 83, 0.3);
+    background-color: rgba(22, 66, 83, 0.3);
     border: 3px solid rgb(22, 66, 83);
     width: 300px;
 }
@@ -1018,4 +1015,13 @@ body {
     top: 20px;
     margin-bottom: 0;
     z-index: 1;
+}
+
+a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end.fc-event-future:hover {
+    height: fit-content;
+    z-index: 10;
+}
+
+.fc-timegrid-event-harness:hover {
+    z-index: auto !important;
 }
