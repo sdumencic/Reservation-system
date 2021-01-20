@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FullCalendarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +30,14 @@ Route::get('/history', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/packages', function () {
+    return view('packages');
+});
+
+Route::get('events', [EventController::class, 'index'])->name('events.index');
+Route::post('events/add', [EventController::class, 'store'])->name('events.add');
