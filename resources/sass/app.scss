@@ -1019,3 +1019,46 @@ body {
     margin-bottom: 0;
     z-index: 1;
 }
+
+@media screen and (max-width: 770px) {
+    .dashboard {
+        height: auto;
+    }
+
+    .btn-dashboard {
+        background-color: none;
+        border: 3px solid rgb(22, 66, 83);
+        width: 200px;
+        transition: 1s ease;
+    }
+
+    .btn-dashboard:hover {
+        background-color:  rgba(22, 66, 83, 0.3);
+        border: 3px solid rgb(22, 66, 83);
+        width: 200px;
+    }
+
+    .dashboard-msg {
+        top: 20px;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+    .border-right {
+        border: none !important;
+    }
+
+    .border-bottom {
+        border: none !important;
+    }
+
+    .border-left {
+        border: none !important;
+    }
+
+    .col-md-6 {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-left: 10px !important;
+    }
+}
