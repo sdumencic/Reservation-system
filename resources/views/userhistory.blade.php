@@ -8,7 +8,6 @@
               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
           });
-          //$("#UserList").tablesorter();
         });
     </script>
     <script>
