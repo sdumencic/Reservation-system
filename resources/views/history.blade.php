@@ -1,7 +1,6 @@
 <x-app-layout>
     <div style="display:flex; background-color:rgba(179, 179, 179, 0.7);">
-        <div class="jumbotron"
-            style="margin:2rem; width: 100%; background-color:rgb(241, 241, 241); text-align:center;">
+        <div class="jumbotron background">
             <h1 class="display-4 title title-shadow" style="margin-bottom: 7%;">History of chess</h1>
             <div class="container text">
                 <div class="row margin20">
