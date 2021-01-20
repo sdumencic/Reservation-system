@@ -81,7 +81,7 @@
                                     {{-- <p class="text-muted">
                                         If you want to see your history of reservations click here.
                                     </p> --}}
-                                    <a class="btn btn-lg btn-dashboard" href="/events" role="button">History</a>
+                                    <a class="btn btn-lg btn-dashboard" href="/userhistory" role="button">History</a>
                                 </div>
                             </div>
                         </div>
