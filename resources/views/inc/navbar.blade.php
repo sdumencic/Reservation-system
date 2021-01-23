@@ -88,9 +88,11 @@
 
                                     <hr class="dropdown-divider">
 
-                                    <x-jet-dropdown-link href="{{ url('/dashboard') }}" class="text-muted">
+                                    <x-jet-dropdown-link href="{{ url('/dashboard') }}">
                                         {{ __('Dashboard') }}
                                     </x-jet-dropdown-link>
+
+                                    <hr class="dropdown-divider">
 
                                     <!-- Authentication -->
                                     <x-jet-dropdown-link href="{{ route('logout') }}"
