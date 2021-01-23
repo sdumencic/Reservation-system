@@ -12,6 +12,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
+html {
+    width: -webkit-fill-available;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-image: linear-gradient(
@@ -1004,7 +1008,6 @@ a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end.fc-event-fut
     .background {
         background-color:rgb(241, 241, 241);
         text-align:center;
-        width: -webkit-fill-available;
         margin: 1rem;
     }
 
