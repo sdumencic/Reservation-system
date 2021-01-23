@@ -21,13 +21,29 @@ class EventController extends Controller
             return redirect('/');
         }
 
-        if(Auth::user()->hasAnyRole('admin')) {
-            $event = Event::all();//Event::orderBy('start', 'asc')->paginate(12);
+        if (Auth::user()->hasAnyRole('admin')) {
+            $event = Event::all(); //Event::orderBy('start', 'asc')->paginate(12);
+            return view('eventsall')->with('events', $event);
         } else {
-            $event = Event::where('user_id', Auth::user()->id)->get();
+            /* $event = Event::where('user_id', Auth::user()->id)->get(); */
+
+            /* $events = Event::get();
+            $event = $events->map->only(['start', 'end', 'color', 'textColor']); */
+
+            /* $event = Event::get();
+            $event->pluck('start', 'end', 'color', 'textColor'); */
+
+            /* $collection = Event::all();
+
+            $event = $collection->except(['title']);
+
+            $event->all(); */
+
+            $event = Event::all();
+            return view('events')->with('events', $event);
         }
 
-        return view('events')->with('events', $event);
+        /* return view('events')->with('events', $event); */
     }
 
     public function store(Request $request)
@@ -36,7 +52,7 @@ class EventController extends Controller
             return redirect('/');
         }
 
-        $this->allslots=array('Casual Package', 'Serious Package', 'Commited Package');
+        $this->allslots = array('Casual Package', 'Serious Package', 'Commited Package');
 
         $this->validate($request, [
             'title' => ['required', 'string', 'max:255', Rule::in($this->allslots)],
@@ -65,6 +81,21 @@ class EventController extends Controller
             return view('events')->with('events', $event);
         }
         return redirect('/events')->with('error', 'Unauthorized Page');
+    }
+
+    public function history()
+    {
+        if (!Auth::user()) {
+            return redirect('/');
+        }
+
+        if (Auth::user()->hasAnyRole('admin')) {
+            $event = Event::all();
+        } else {
+            $event = Event::where('user_id', Auth::user()->id)->get();
+        }
+
+        return view('userhistory')->with('events', $event);
     }
 
     public function destroy($id)

@@ -96,6 +96,7 @@
                         echo "{"
                     @endphp
 
+                        title: "{{$event->user->name}} - {{$event->title}}",
                         start: "{{$event->start}}",
                         end: "{{$event->end}}",
                         color: "{{$event->color}}",
