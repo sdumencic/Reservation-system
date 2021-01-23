@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);@import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -11571,7 +11571,7 @@ body {
   --main-color: #00a8f3;
 }
 
-.contact:hover {
+a:hover {
   color: #ffffff;
   text-decoration: none;
   background: var(--main-color);
@@ -11579,12 +11579,12 @@ body {
   transition-delay: 1s;
 }
 
-.contact span {
+a span {
   position: absolute;
   display: block;
 }
 
-.contact span:nth-child(1) {
+a span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -11592,12 +11592,12 @@ body {
   background: linear-gradient(90deg, transparent, var(--main-color));
 }
 
-.contact:hover span:nth-child(1) {
+a:hover span:nth-child(1) {
   left: 100%;
   transition: 1s;
 }
 
-.contact span:nth-child(3) {
+a span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -11605,13 +11605,13 @@ body {
   background: linear-gradient(270deg, transparent, var(--main-color));
 }
 
-.contact:hover span:nth-child(3) {
+a:hover span:nth-child(3) {
   right: 100%;
   transition: 1s;
   transition-delay: 0.5s;
 }
 
-.contact span:nth-child(2) {
+a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 4px;
@@ -11619,13 +11619,13 @@ body {
   background: linear-gradient(180deg, transparent, var(--main-color));
 }
 
-.contact:hover span:nth-child(2) {
+a:hover span:nth-child(2) {
   top: 100%;
   transition: 1s;
   transition-delay: 0.25s;
 }
 
-.contact span:nth-child(4) {
+a span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 4px;
@@ -11633,7 +11633,7 @@ body {
   background: linear-gradient(360deg, transparent, var(--main-color));
 }
 
-.contact:hover span:nth-child(4) {
+a:hover span:nth-child(4) {
   bottom: 100%;
   transition: 1s;
   transition-delay: 0.75s;
@@ -11674,6 +11674,19 @@ body {
   background-color: black;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.right {
+  text-align: right;
+}
+
 .margin20 {
   margin-bottom: 12%;
 }
@@ -11681,13 +11694,11 @@ body {
 .from-left {
   grid-column: 2/3;
   transform: translateX(-50%);
-  text-align: left;
 }
 
 .from-right {
   grid-column: 3/4;
   transform: translateX(50%);
-  text-align: right;
 }
 
 .from-left,
@@ -12005,6 +12016,14 @@ a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end.fc-event-fut
 
   .title {
     font-size: 2rem;
+  }
+
+  .card {
+    float: none !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    margin: 20px 0 !important;
   }
 }
 

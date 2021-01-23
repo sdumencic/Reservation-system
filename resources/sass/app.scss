@@ -1,16 +1,15 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
-@import "variables";
+@import 'variables';
 
 // Bootstrap
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html {
     width: -webkit-fill-available;
@@ -565,7 +564,7 @@ body {
 
 .title {
     font-weight: 900;
-    color: rgb(22, 66, 83);
+    color:rgb(22, 66, 83);
 }
 
 .icons {
@@ -583,7 +582,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
-    padding: 5%;
+    padding:5%;
     color: #14db0d;
     text-transform: unset;
     letter-spacing: 2px;
@@ -591,7 +590,7 @@ body {
     font-size: 150%;
     overflow: hidden;
     transition: 0.2s;
-    --main-color: #14db0d;
+    --main-color:#14db0d;
 }
 
 .neonbutton-discord {
@@ -602,7 +601,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
-    padding: 5%;
+    padding:5%;
     color: #573de4;
     text-transform: unset;
     letter-spacing: 2px;
@@ -610,7 +609,7 @@ body {
     font-size: 150%;
     overflow: hidden;
     transition: 0.2s;
-    --main-color: #573de4;
+    --main-color:#573de4;
 }
 
 .neonbutton-email {
@@ -621,7 +620,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
-    padding: 5%;
+    padding:5%;
     color: #00a8f3;
     text-transform: unset;
     letter-spacing: 2px;
@@ -629,72 +628,71 @@ body {
     font-size: 150%;
     overflow: hidden;
     transition: 0.2s;
-    --main-color: #00a8f3;
+    --main-color:#00a8f3;
 }
 
-.contact:hover {
+a:hover {
     color: #ffffff;
     text-decoration: none;
     background: var(--main-color);
-    box-shadow: 0 0 20pxvar (--main-color), 0 0 40px var(--main-color),
-        0 0 80px var(--main-color);
+    box-shadow: 0 0 20pxvar(--main-color), 0 0 40px var(--main-color), 0 0 80px var(--main-color);
     transition-delay: 1s;
 }
 
-.contact span {
+a span {
     position: absolute;
     display: block;
 }
-.contact span:nth-child(1) {
+a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, transparent, var(--main-color));
+    background:linear-gradient(90deg, transparent,var(--main-color))
 }
 
-.contact:hover span:nth-child(1) {
+a:hover span:nth-child(1) {
     left: 100%;
     transition: 1s;
 }
 
-.contact span:nth-child(3) {
+a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
     height: 4px;
-    background: linear-gradient(270deg, transparent, var(--main-color));
+    background:linear-gradient(270deg, transparent, var(--main-color))
 }
 
-.contact:hover span:nth-child(3) {
+a:hover span:nth-child(3) {
     right: 100%;
     transition: 1s;
     transition-delay: 0.5s;
 }
 
-.contact span:nth-child(2) {
+a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, var(--main-color));
+    background:linear-gradient(180deg, transparent, var(--main-color))
 }
 
-.contact:hover span:nth-child(2) {
+a:hover span:nth-child(2) {
     top: 100%;
     transition: 1s;
     transition-delay: 0.25s;
 }
 
-.contact span:nth-child(4) {
+a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, var(--main-color));
+    background:linear-gradient(360deg, transparent, var(--main-color))
 }
 
-.contact:hover span:nth-child(4) {
+a:hover span:nth-child(4) {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
@@ -703,7 +701,7 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
-}
+  }
 
 .grid-item {
     padding: 20px;
@@ -712,51 +710,62 @@ body {
     border-radius: 50%;
     width: 70px;
     height: 70px;
-}
-.grid-item:hover {
-    transition: 1s;
-    transform: rotateY(360deg);
-}
+  }
 
-.chessicon {
-    width: 200%;
-    margin-top: -100%;
-    margin-left: -50%;
-    border-radius: 50%;
-}
+  .grid-item:hover {
+      transition: 1s;
+      transform: rotateY(360deg);
 
-.chessicon1 {
-    background-color: white;
-}
+  }
 
-.chessicon2 {
-    background-color: black;
-}
+  .chessicon {
+      width: 200%;
+      margin-top: -100%;
+      margin-left: -50%;
+      border-radius: 50%;
+  }
 
-.margin20 {
-    margin-bottom: 12%;
-}
+  .chessicon1 {
+      background-color: white;
+  }
 
-.from-left {
-    grid-column: 2/3;
-    transform: translateX(-50%);
-    text-align: left;
-}
+  .chessicon2 {
+      background-color: black;
+  }
 
-.from-right {
+  .fade-in {
+      opacity: 0;
+      transition: opacity 250ms ease-in;
+  }
+
+  .fade-in.appear {
+      opacity: 1;
+  }
+
+  .right {
+      text-align: right;
+  }
+
+  .margin20 {
+      margin-bottom: 12%;
+  }
+
+  .from-left {
+      grid-column: 2/3;
+      transform: translateX(-50%);
+  }
+
+  .from-right {
     grid-column: 3/4;
     transform: translateX(50%);
-    text-align: right;
 }
 
-.from-left,
-.from-right {
+.from-left, .from-right {
     transition: opacity 250ms ease-in, transform 400ms ease-in;
     opacity: 0;
 }
 
-.from-left.appear,
-.from-right.appear {
+.from-left.appear, .from-right.appear {
     transform: translateX(0);
     opacity: 1;
 }
@@ -1059,6 +1068,12 @@ a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end.fc-event-fut
 
     .title {
         font-size: 2rem;
+    }
+
+    .card {
+        float: none !important;
+        width: fit-content !important;
+        margin: 20px 0 !important;
     }
 
 }
