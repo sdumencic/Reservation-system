@@ -10904,7 +10904,7 @@ a.text-dark:focus {
 }
 
 html {
-  /* height: 100%; */
+  width: -webkit-fill-available;
 }
 
 body {
@@ -11016,6 +11016,7 @@ body {
 
 .about-me-grid-item-two-columns {
   display: grid;
+  align-items: center;
   background-color: transparent;
   text-align: center;
   grid-column-start: 1;
@@ -11272,14 +11273,16 @@ body {
 }
 
 .opt-in-button {
-  position: absolute;
-  margin-left: 35%;
-  width: 15%;
-  height: 10%;
-  background: #ff0202;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 150px;
+  height: 70px;
   text-transform: uppercase;
   font-size: 100%;
   letter-spacing: 3px;
+  vertical-align: middle;
   text-decoration: none;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   z-index: 0;
@@ -11929,5 +11932,26 @@ body {
 .crocoach {
   color: white;
   text-shadow: 2px 2px 4px #000000;
+}
+
+@media (max-width: 1025px) {
+  html {
+    min-width: 400px;
+  }
+
+  .about-me-grid-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .background {
+    background-color: #f1f1f1;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .about-me-grid-item-two-columns {
+    min-width: 0;
+  }
 }
 
