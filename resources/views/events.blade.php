@@ -96,7 +96,7 @@
                         echo "{"
                     @endphp
 
-                    @if (Auth::user()->hasAnyRole('admin'))
+                    @if ($isAdmin)
                         title: "{{$event->user->name}} - {{$event->title}}",
                     @endif
 

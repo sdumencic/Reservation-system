@@ -23,7 +23,7 @@ class EventController extends Controller
         }
 
         $event = Event::all();
-        return view('events')->with('events', $event);
+        return view('events')->with('events', $event)->with('isAdmin', Auth::user()->hasAnyRole('admin'));
     }
 
     public function store(Request $request)
