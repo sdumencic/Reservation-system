@@ -12,6 +12,7 @@ use Auth;
 use Validator;
 
 use Calendar;
+use Illuminate\Support\Facades\Auth as FacadesAuth;
 
 class EventController extends Controller
 {
@@ -21,29 +22,8 @@ class EventController extends Controller
             return redirect('/');
         }
 
-        if (Auth::user()->hasAnyRole('admin')) {
-            $event = Event::all(); //Event::orderBy('start', 'asc')->paginate(12);
-            return view('eventsall')->with('events', $event);
-        } else {
-            /* $event = Event::where('user_id', Auth::user()->id)->get(); */
-
-            /* $events = Event::get();
-            $event = $events->map->only(['start', 'end', 'color', 'textColor']); */
-
-            /* $event = Event::get();
-            $event->pluck('start', 'end', 'color', 'textColor'); */
-
-            /* $collection = Event::all();
-
-            $event = $collection->except(['title']);
-
-            $event->all(); */
-
-            $event = Event::all();
-            return view('events')->with('events', $event);
-        }
-
-        /* return view('events')->with('events', $event); */
+        $event = Event::all();
+        return view('events')->with('events', $event);
     }
 
     public function store(Request $request)

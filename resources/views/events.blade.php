@@ -96,6 +96,10 @@
                         echo "{"
                     @endphp
 
+                    @if (Auth::user()->hasAnyRole('admin'))
+                        title: "{{$event->user->name}} - {{$event->title}}",
+                    @endif
+
                         start: "{{$event->start}}",
                         end: "{{$event->end}}",
                         color: "{{$event->color}}",
