@@ -110,6 +110,7 @@ body {
 
 .about-me-grid-item-two-columns {
     display: grid;
+    align-items: center;
     background-color: transparent;
     text-align: center;
     grid-column-start: 1;
@@ -117,39 +118,42 @@ body {
     z-index: 0;
 }
 
-.pieces-above-packages-container {
-    width: 100%;
-    height: 200px;
+.pieces-with-packages-container {
+    width: 30%;
+    margin: 50px;
+    justify-content: center;
+    height: auto;
     overflow: hidden;
 }
+
 .pieces-above-packages {
     position: relative;
-    width: 11%;
-    height: auto;
-    margin-left: 13%;
-    margin-right: 9%;
-    float: left;
+    width: 35%;
+    height: 100%;
+    display: grid;
+    margin: 20px;
+    margin-left: 30%;
+    margin-top: 0;
 }
 .packages-container {
     width: 100%;
+
+    border: 2px dotted rgb(50, 147, 186);
+    padding-bottom: 30px;
+    border-radius: 20px;
+    height: auto;
+    margin: auto;
     display: flex;
     justify-content: center;
-}
-
-.packages-box {
-    position: relative;
-    display: grid;
 }
 
 .packages-container .packages-box {
     position: relative;
     background: rgb(104, 114, 116);
     border-radius: 10px;
-    width: 30%;
+    width: 100%;
     height: auto;
-    display: flex;
-    margin: 20px;
-    margin-top: 0;
+    padding-top: 25px;
     overflow: hidden;
 }
 
@@ -159,8 +163,8 @@ body {
 
 .packages-container .packages-box .packages-content {
     display: grid;
-    padding: 20px;
-    margin: 10px;
+    padding: 5px;
+    margin: 0px;
     text-align: center;
     justify-content: center;
     color: #fff;
@@ -168,7 +172,7 @@ body {
 
 .packages-container .packages-box .packages-content h2 {
     position: absolute;
-    right: 4%;
+    right: 3%;
     top: 110px;
     font-size: 300%;
     color: #fff;
@@ -180,15 +184,15 @@ body {
 .packages-container .packages-box:hover .packages-content h2 {
     opacity: 1;
     font-weight: 800;
-    transform: translateY(-90px);
+    transform: translateY(-100px);
 }
 
 .packages-container .packages-box .packages-content h3 {
     position: relative;
-    width: 90%;
+    width: 80%;
     height: 100%;
     color: #fff;
-    font-weight: 1200;
+    font-weight: 900;
     font-size: 300%;
     margin-bottom: 1%;
     z-index: 2;
@@ -199,9 +203,10 @@ body {
 
 .packages-container .packages-box .packages-content p {
     position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0;
+    width: 75%;
+    font-size: auto;
+    height: 100%;
+    margin: 1px;
     padding: 0;
     z-index: 2;
     opacity: 0.5;
@@ -224,7 +229,7 @@ body {
     opacity: 1;
 }
 
-.packages-container .packages-box .packages-span:nth-child(1) {
+.packages-box .packages-span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -244,7 +249,7 @@ body {
     }
 }
 
-.packages-container .packages-box .packages-span:nth-child(2) {
+.packages-box .packages-span:nth-child(2) {
     position: absolute;
     top: 0;
     right: 0;
@@ -265,7 +270,7 @@ body {
     }
 }
 
-.packages-container .packages-box .packages-span:nth-child(3) {
+.packages-box .packages-span:nth-child(3) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -285,7 +290,7 @@ body {
     }
 }
 
-.packages-container .packages-box .packages-span:nth-child(4) {
+.packages-box .packages-span:nth-child(4) {
     position: absolute;
     top: 0;
     left: 0;
@@ -313,14 +318,16 @@ body {
 }
 
 .opt-in-button {
-    position: absolute;
-    margin-left: 35%;
-    width: 15%;
-    height: 10%;
-    background: #ff0202;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    height: 70px;
     text-transform: uppercase;
     font-size: 100%;
     letter-spacing: 3px;
+    vertical-align: middle;
     text-decoration: none;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     z-index: 0;
