@@ -69,15 +69,65 @@
                             </div>
                             <div class="form-group">
                                 <label for="message-text" class="col-form-label">Color:</label>
-                                <input type="color" class="form-control" id="start" name="color">
+                                <input type="color" class="form-control" id="color" name="color">
                             </div>
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Text color:</label>
-                                <input type="color" class="form-control" id="end" name="textColor">
+                                <input type="color" class="form-control" id="textColor" name="textColor">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Send message</button>
+                                <button type="submit" class="btn btn-primary">Book appointment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editModalLabel">Are you sure you want to edit this appointment?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="dialog">
+                        <form id="dayClick" method="post" action="{{ route('events.destroy') }}">
+                            @csrf
+                            {{-- <div class="form-group">
+                                <label for="recipient-name" class="col-form-label" id="title">Package:</label>
+                                <p class="form-control" id="packages" name="title"></p>
+                            </div> --}}
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Start:</label>
+                                <input type="text" class="form-control" id="start" name="start" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">End:</label>
+                                <input type="text" class="form-control" id="end" name="end" readonly>
+                            </div>
+                            <div class="form-group" hidden>
+                                <label for="recipient-name" class="col-form-label">UserID:</label>
+                                <input type="text" class="form-control" id="user_id" name="user_id">
+                            </div>
+                            <div class="form-group" hidden>
+                                <label for="recipient-name" class="col-form-label">ID:</label>
+                                <input type="text" class="form-control" id="id" name="id">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Color:</label>
+                                <input type="color" class="form-control" id="color" name="color" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Text color:</label>
+                                <input type="color" class="form-control" id="textColor" name="textColor" readonly>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-danger">Delete</button>
                             </div>
                         </form>
                     </div>
@@ -104,6 +154,7 @@
                         end: "{{$event->end}}",
                         color: "{{$event->color}}",
                         textColor: "{{$event->textColor}}",
+                        id: "{{$event->id}}",
 
                     @php
                         echo "},"
