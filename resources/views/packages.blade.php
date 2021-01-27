@@ -1,98 +1,102 @@
 <x-app-layout>
-    <div
-        class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-        <div class="grid grid-cols-1 md:grid-cols-2"
-            style="display:flex; background-color:rgba(179, 179, 179, 0.7);">
-            <div class="jumbotron" style="margin:2rem; width: 100%; height:100%; background-color:rgb(241, 241, 241); text-align:center;">
-                <h1 class="display-4 title title-shadow" style = "font-size:750%;margin-bottom:1%">Packages</h1>
+    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+        <div class="grid grid-cols-1 md:grid-cols-2" style="display:flex; background-color:rgba(179, 179, 179, 0.7);">
+            <div class="jumbotron background" style="margin:2rem; width: 100%; height:100%; background-color:rgb(241, 241, 241); text-align:center;">
+                <h1 class="display-4 title title-shadow" style = "font-size:500%;margin-bottom:1%">Packages</h1>
                 <br>
                 <h3 class="display-4 title title-shadow" style = "font-size:450%;margin-bottom:3%; margin-top: 7%">Monthly packages</h3>
 
-                <div class = "pieces-above-packages-container">
-                    <div>
-                        <img class = "pieces-above-packages" src="https://i.ibb.co/TwgvkJ7/Knight.png">
-                    </div>
-
-                    <div>
-                        <img class = "pieces-above-packages" style = "margin-right: 9%" src="https://i.ibb.co/w4jHc9J/Queen.png">
-                    </div>
-
-                    <div>
-                        <img class = "pieces-above-packages" src="https://i.ibb.co/28F6sYm/King.png">
-                    </div>
-                </div>
                 <div class = "packages-container">
 
-                    <div class = "packages-box" style = "margin-left: 5%">
-                        <span class = "packages-span"></span>
-                        <span class = "packages-span"></span>
-                        <span class = "packages-span"></span>
-                        <span class = "packages-span"></span>
+                    <div class = "pieces-with-packages-container">
+                        <div>
+                            <img class = "pieces-above-packages" src="https://i.ibb.co/TwgvkJ7/Knight.png">
+                        </div>
 
-                        <div class = "packages-content">
+                        <div class = "packages-box">
+                            <span class = "packages-span"></span>
+                            <span class = "packages-span"></span>
+                            <span class = "packages-span"></span>
+                            <span class = "packages-span"></span>
 
+                            <div class = "packages-content">
 
-                            <h2 class = "title-shadow">$200<h2>
-                            <h3>Casual</h3>
-                            <p>Chess is not your priority, <br>but you'd like to gradually improve</p>
-                            <hr style = "border:1px solid white; margin:0; padding:0">
+                                <h2 class = "title-shadow">$175</h2>
+                                <h3>Casual</h3>
+                                <p>Chess is not your priority, but you'd like to gradually improve</p>
+                                <hr style = "border:1px solid white; margin:0; padding:0; margin: 20px">
 
-                            <ul style = "text-align: left">
-                                <li> 1 hour of lessons every week with added materials between them </li>
-                                <li> Availability to questions, reply within 10 hours (nighttime excluded) </li>
-                                <li> Access to 3 books </li>
-                                <li> Written analysis of any game you send me</li>
-                            </ul>
+                                <ul style = "text-align: left">
+                                    <li> 1 hour of lessons every week</li>
+                                    <li> Availability to questions, reply within 10 hours <small>(nighttime excluded)</small> </li>
+                                    <li> Access to 2 books per month </li>
+                                    <li> Written analysis of key moments of any game you send me</li>
+                                    <li> Optional accountability check every 3 days</li>
+                                </ul>
 
+                            </div>
                         </div>
                     </div>
 
+                    <div class = "pieces-with-packages-container">
 
-                    <div class = "packages-box" style = "margin-left: 5%">
-                        <span class = "packages-span"></span>
-                        <span class = "packages-span"></span>
-                        <span class = "packages-span"></span>
-                        <span class = "packages-span"></span>
-                        <div class = "packages-content">
+                        <div>
+                            <img class = "pieces-above-packages" src="https://i.ibb.co/w4jHc9J/Queen.png">
+                        </div>
 
-                            <h2 class = "title-shadow">$300<h2>
-                            <h3>Serious</h3>
-                            <p>You're willing to invest a bit more to improve your game and get results much faster</p><br>
-                            <hr style = "border:1px solid white; margin:0; padding:0; margin-bottom: 20px;">
+                        <div class = "packages-box">
+                            <span class = "packages-span"></span>
+                            <span class = "packages-span"></span>
+                            <span class = "packages-span"></span>
+                            <span class = "packages-span"></span>
+                            <div class = "packages-content">
 
-                            <ul style = "text-align: left">
-                                <li> 1.5 hours of lessons every week with added materials between them </li>
-                                <li> Availability to questions - reply within 5 hours (nighttime excluded) </li>
-                                <li> Access to 10 books </li>
-                                <li> Access to 5 of my Lichess studies </li>
-                                <li> A game with me once a week with analysis </li>
-                                <li> Written in-depth explanation and analysis of any game you send me </li>
-                            </ul>
+                                <h2 class = "title-shadow">$300<h2>
+                                <h3>Serious</h3>
+                                <p>You're willing to invest to improve your game and get results much faster</p><br>
+                                <hr style = "border:1px solid white; margin:0; padding:0; margin: 20px; margin-top: 0">
 
+                                <ul style = "text-align: left">
+                                    <li> 1.5 hours of lessons every week with added materials between them </li>
+                                    <li> Availability to questions - reply within 3 hours <small>(nighttime excluded)</small> </li>
+                                    <li> Access to 7 books per month </li>
+                                    <li> Access to 5 of my Lichess studies </li>
+                                    <li> A game with me once a week with analysis</li>
+                                    <li> Written in-depth explanation and analysis of any game you send me </li>
+                                </ul>
+
+                            </div>
                         </div>
                     </div>
 
+                    <div class = "pieces-with-packages-container">
 
-                    <div class = "packages-box" style = "margin-left: 5%">
-                        <span class = "packages-span"></span>
-                        <span class = "packages-span"></span>
-                        <span class = "packages-span"></span>
-                        <span class = "packages-span"></span>
-                        <div class = "packages-content">
+                        <div>
+                            <img class = "pieces-above-packages"  src="https://i.ibb.co/28F6sYm/King.png">
+                        </div>
 
-                            <h2 class = "title-shadow">$400<h2>
-                            <h3>Comitted</h3>
-                            <p>You're very intrigued by or highly passionate about chess</p>
-                            <hr style = "border:1px solid white; margin:0; padding:0; margin-bottom: 20px; margin-top: 10px">
 
-                            <ul style = "text-align: left">
-                                <li> 2 hours of lessons every week with added materials between them </li>
-                                <li> Availability to questions - reply within an hour (nighttime excluded) </li>
-                                <li> Access to any chess book ever written </li>
-                                <li> Full access to all of my Lichess studies </li>
-                                <li> A game with me twice a week with analysis </li>
-                                <li> Full video analysis of any game you send me </li>
-                            </ul>
+                        <div class = "packages-box">
+                            <span class = "packages-span"></span>
+                            <span class = "packages-span"></span>
+                            <span class = "packages-span"></span>
+                            <span class = "packages-span"></span>
+                            <div class = "packages-content">
+
+                                <h2 class = "title-shadow">$500<h2>
+                                <h3>Comitted</h3>
+                                <p>You're very intrigued by and/or highly passionate about chess</p>
+                                <hr style = "border:1px solid white; margin:0; padding:0; margin:20px">
+
+                                <ul style = "text-align: left">
+                                    <li> 2 hours of lessons every week with added materials between them and homework </li>
+                                    <li> Availability to questions - reply within an hour <small>(nighttime excluded)</small> </li>
+                                    <li> Access to unlimited chess books</li>
+                                    <li> Full access to all of my Lichess studies </li>
+                                    <li> A game with me twice a week with deep analysis and pinpointing mistakes </li>
+                                    <li> Full in-depth video analysis of any game you send me </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

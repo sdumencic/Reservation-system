@@ -11024,41 +11024,40 @@ body {
   z-index: 0;
 }
 
-.pieces-above-packages-container {
-  width: 100%;
-  height: 200px;
+.pieces-with-packages-container {
+  width: 30%;
+  margin: 50px;
+  justify-content: center;
+  height: auto;
   overflow: hidden;
+  border: 2px solid pink;
 }
 
 .pieces-above-packages {
   position: relative;
-  width: 11%;
-  height: auto;
-  margin-left: 13%;
-  margin-right: 9%;
-  float: left;
+  width: 35%;
+  height: 100%;
+  display: grid;
+  margin: 20px;
+  margin-left: 30%;
+  margin-top: 0;
 }
 
 .packages-container {
   width: 100%;
+  height: auto;
+  border: 2px solid yellow;
   display: flex;
   justify-content: center;
-}
-
-.packages-box {
-  position: relative;
-  display: grid;
 }
 
 .packages-container .packages-box {
   position: relative;
   background: #687274;
   border-radius: 10px;
-  width: 30%;
+  width: 100%;
   height: auto;
-  display: flex;
-  margin: 20px;
-  margin-top: 0;
+  padding-top: 25px;
   overflow: hidden;
 }
 
@@ -11068,8 +11067,8 @@ body {
 
 .packages-container .packages-box .packages-content {
   display: grid;
-  padding: 20px;
-  margin: 10px;
+  padding: 5px;
+  margin: 0px;
   text-align: center;
   justify-content: center;
   color: #fff;
@@ -11077,7 +11076,7 @@ body {
 
 .packages-container .packages-box .packages-content h2 {
   position: absolute;
-  right: 4%;
+  right: 3%;
   top: 110px;
   font-size: 300%;
   color: #fff;
@@ -11094,7 +11093,7 @@ body {
 
 .packages-container .packages-box .packages-content h3 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 100%;
   color: #fff;
   font-weight: 1200;
@@ -11108,10 +11107,12 @@ body {
 
 .packages-container .packages-box .packages-content p {
   position: relative;
-  width: 100%;
-  height: auto;
-  margin: 0;
+  width: 75%;
+  font-size: auto;
+  height: 100%;
+  margin: 1px;
   padding: 0;
+  border: 2px solid green;
   z-index: 2;
   opacity: 0.5;
   font-weight: 500;
@@ -11133,7 +11134,7 @@ body {
   opacity: 1;
 }
 
-.packages-container .packages-box .packages-span:nth-child(1) {
+.packages-box .packages-span:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
@@ -11165,7 +11166,7 @@ body {
   }
 }
 
-.packages-container .packages-box .packages-span:nth-child(2) {
+.packages-box .packages-span:nth-child(2) {
   position: absolute;
   top: 0;
   right: 0;
@@ -11199,7 +11200,7 @@ body {
   }
 }
 
-.packages-container .packages-box .packages-span:nth-child(3) {
+.packages-box .packages-span:nth-child(3) {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -11231,7 +11232,7 @@ body {
   }
 }
 
-.packages-container .packages-box .packages-span:nth-child(4) {
+.packages-box .packages-span:nth-child(4) {
   position: absolute;
   top: 0;
   left: 0;
@@ -11946,12 +11947,36 @@ body {
 
   .background {
     background-color: #f1f1f1;
+    color: red;
     text-align: center;
     margin: 1rem;
   }
 
   .about-me-grid-item-two-columns {
     min-width: 0;
+  }
+
+  .packages-box {
+    width: 100%;
+    background-color: green;
+    color: green;
+  }
+}
+
+@media (max-width: 1550px) {
+  .pieces-with-packages-container {
+    position: relative;
+    width: 100%;
+    border: 1px solid blue;
+  }
+
+  .packages-content {
+    width: 100%;
+  }
+
+  .packages-container .packages-box {
+    margin: 0;
+    border: 6px solid red;
   }
 }
 
