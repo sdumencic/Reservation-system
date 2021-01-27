@@ -41,5 +41,6 @@ Route::get('/packages', function () {
 
 Route::get('events', [EventController::class, 'index'])->name('events.index');
 Route::post('events/add', [EventController::class, 'store'])->name('events.add');
+Route::post('events/destroy', [EventController::class, 'destroy'])->name('events.destroy');
 
 Route::get('userhistory', [EventController::class, 'history'])->name('userhistory.history');

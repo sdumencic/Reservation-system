@@ -78,9 +78,17 @@ class EventController extends Controller
         return view('userhistory')->with('events', $event);
     }
 
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        $event = Event::find($id);
+        if (!Auth::user()) {
+            return redirect('/');
+        }
+
+        $this->validate($request, [
+            'id' => ['required', 'numeric'],
+        ]);
+
+        $event = Event::find($request->input('id'));
         if (auth()->user()->id === $event->user_id || Auth::user()->hasAnyRole('admin')) {
             $event->delete();
             return redirect('/events')->with('success', 'Reservation Deleted');

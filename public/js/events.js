@@ -39608,6 +39608,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fortawesome_fontawesome_free_css_all_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free_css_all_css__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var moment_timezone__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! moment-timezone */ "./node_modules/moment-timezone/index.js");
 /* harmony import */ var moment_timezone__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(moment_timezone__WEBPACK_IMPORTED_MODULE_6__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // Description: Collection of custom made functions to render and interact with
 //              the Full Calendar JS library.
 // IMPORTS ////////////////////////////////////////////////////////////////////
@@ -39624,7 +39626,8 @@ var options = {
   title: "",
   start: "",
   end: "",
-  userId: ""
+  userId: "",
+  id: ""
 };
 var calendar = null;
 
@@ -39634,8 +39637,9 @@ var _dateClick = function dateClick(info) {
     return;
   } // TODO: Hendlanje forma
 
+  /* console.log(info); */
+  // Set the information
 
-  console.log(info); // Set the information
 
   options.title = "Basic Package";
   /* options.start = new moment(info.date).format('DD.MM.YYYY HH:mm:ss [GMT] Z');
@@ -39646,6 +39650,23 @@ var _dateClick = function dateClick(info) {
   options.userIf = 0; // Show the modal
 
   $("#exampleModal").modal("show");
+};
+
+var _eventClick = function eventClick(info) {
+  if (info.view.type !== "timeGridWeek") {
+    alert("Switch to Week view to edit or delete appointments.");
+    return;
+  }
+
+  console.log(info);
+  options.title = info.event.title;
+  options.start = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).format("YYYY-MM-DD HH:mm:ss");
+  options.end = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).add(1, "hour").format("YYYY-MM-DD HH:mm:ss");
+  options.userIf = 0;
+  options.id = info.event.id;
+  options.color = info.event.backgroundColor;
+  options.textColor = info.event.textColor;
+  $("#editModal").modal("show");
 }; // Update the modal with our options data
 
 
@@ -39655,11 +39676,21 @@ $("#exampleModal").on("show.bs.modal", function (event) {
   modal.find("#start").val(options.start);
   modal.find("#end").val(options.end);
 });
+$("#editModal").on("show.bs.modal", function (event) {
+  var modal = $(this);
+  modal.find("#title").val(options.title);
+  modal.find("#start").val(options.start);
+  modal.find("#end").val(options.end);
+  modal.find("#id").val(options.id);
+  console.log(options);
+  modal.find("#color").val(options.color);
+  modal.find("#textColor").val(options.textColor);
+});
 var renderTimeGridView = function renderTimeGridView() {
   // Fetch our Calendar DIV from the DOM
   var calendarEl = document.getElementById("calendar"); // Generate our Calendar Object
 
-  calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["Calendar"](calendarEl, {
+  calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["Calendar"](calendarEl, _defineProperty({
     plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_1__["default"], _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_2__["default"], _fullcalendar_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_4__["default"]],
     themeSystem: "bootstrap",
     //standard/bootstrap
@@ -39703,9 +39734,13 @@ var renderTimeGridView = function renderTimeGridView() {
     },
     select: function select(info) {
       alert("selected " + info.startStr + " to " + info.endStr);
-    } // Add new function TODO: SPINFOFF IN ANOTHER FUNTION
-
-  }); // Render the Calendar Object
+    },
+    eventClick: function eventClick(info) {
+      _eventClick(info);
+    }
+  }, "select", function select(info) {
+    alert("selected " + info.startStr + " to " + info.endStr);
+  })); // Render the Calendar Object
 
   calendar.render();
 };
