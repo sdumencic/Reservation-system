@@ -97,10 +97,6 @@
                     <div class="modal-body" id="dialog">
                         <form id="dayClick" method="post" action="{{ route('events.destroy') }}">
                             @csrf
-                            {{-- <div class="form-group">
-                                <label for="recipient-name" class="col-form-label" id="title">Package:</label>
-                                <p class="form-control" id="packages" name="title"></p>
-                            </div> --}}
                             <div class="form-group">
                                 <label for="message-text" class="col-form-label">Start:</label>
                                 <input type="text" class="form-control" id="start" name="start" readonly>

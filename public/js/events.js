@@ -39635,16 +39635,10 @@ var _dateClick = function dateClick(info) {
   if (info.view.type !== "timeGridWeek") {
     alert("Switch to Week view to add appointments.");
     return;
-  } // TODO: Hendlanje forma
-
-  /* console.log(info); */
-  // Set the information
+  } // Set the information
 
 
   options.title = "Basic Package";
-  /* options.start = new moment(info.date).format('DD.MM.YYYY HH:mm:ss [GMT] Z');
-  options.end = new moment(info.date).add(1, 'hour').format('DD.MM.YYYY HH:mm:ss [GMT] Z'); */
-
   options.start = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).format("YYYY-MM-DD HH:mm:ss");
   options.end = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).add(1, "hour").format("YYYY-MM-DD HH:mm:ss"); // Show the modal
 
@@ -39664,8 +39658,7 @@ var _eventClick = function eventClick(info) {
   options.color = info.event.backgroundColor;
   options.textColor = info.event.textColor;
   $("#editModal").modal("show");
-}; // Update the modal with our options data
-
+};
 
 $("#exampleModal").on("show.bs.modal", function (event) {
   var modal = $(this);
@@ -39684,9 +39677,7 @@ $("#editModal").on("show.bs.modal", function (event) {
   modal.find("#textColor").val(options.textColor);
 });
 var renderTimeGridView = function renderTimeGridView() {
-  // Fetch our Calendar DIV from the DOM
-  var calendarEl = document.getElementById("calendar"); // Generate our Calendar Object
-
+  var calendarEl = document.getElementById("calendar");
   calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["Calendar"](calendarEl, _defineProperty({
     plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_1__["default"], _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_2__["default"], _fullcalendar_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_4__["default"]],
     themeSystem: "bootstrap",
@@ -39707,17 +39698,6 @@ var renderTimeGridView = function renderTimeGridView() {
     dayHeaderContent: function dayHeaderContent(args) {
       return moment_timezone__WEBPACK_IMPORTED_MODULE_6__(args.date).format("ddd D.MM.");
     },
-
-    /* dayClick: function(date, event, view) {
-        $('#dialog').dialog({
-            title: 'Add Event',
-            width: 600,
-            height: 700,
-            modal: true,
-            show: {effect: 'clip', duration: 350},
-            hide: {effect: 'clip', duration: 250}
-        })
-    }, */
     slotLabelFormat: {
       hour: "numeric",
       minute: "2-digit",
@@ -39737,32 +39717,10 @@ var renderTimeGridView = function renderTimeGridView() {
     }
   }, "select", function select(info) {
     alert("selected " + info.startStr + " to " + info.endStr);
-  })); // Render the Calendar Object
-
+  }));
   calendar.render();
 };
 var addEvents = function addEvents(events) {
-  /* calendar.addEventSource([
-      {
-          title: "Event1",
-          start: "2021-01-20",
-          color: "yellow", // an option!
-          textColor: "black" // an option!
-      },
-      {
-          title: "Event2",
-          start: "2021-01-19",
-          color: "yellow", // an option!
-          textColor: "black" // an option!
-      },
-      {
-          title: "Basic Package",
-          start: "2021-01-22 11:00:00",
-          end: "2021-01-22 15:00:00",
-          color: "#123456",
-          textColor: "pink"
-      }
-  ]); */
   calendar.addEventSource(events);
 }; // CODE ///////////////////////////////////////////////////////////////////////
 

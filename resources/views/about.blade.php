@@ -92,7 +92,7 @@
 
                                     <div class="carousel-inner">
 
-                                    <div class="carousel-item active">  <!-- First visible item  -->
+                                    <div class="carousel-item active">
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
@@ -192,7 +192,6 @@
                                     </div>
 
                                     </div>
-                                    <!-- L/R navigation -->
                                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon btn-span" aria-hidden="true"></span>
                                     <span class="sr-only btn-span">Previous</span>

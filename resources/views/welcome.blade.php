@@ -54,9 +54,7 @@
 
         <div class ="parallax">
             <img class ="parallax-img" id="bg" src="https://i.ibb.co/4g8N9yt/chess.png" alt="chess">
-            <img class ="object-fit" id="moon" src="https://i.ibb.co/dmWbH6P/210112-chess.png" alt="210112-chess">          {{-- parallax-img --}}
-            {{-- <img class ="parallax-img" id="mountain" src="https://i.ibb.co/VJGKTT2/pijun-white.png" alt="pijun-white">
-            <img class ="parallax-img" id="road" src="https://i.ibb.co/VJGKTT2/pijun-white.png" alt="pijun-white"> --}}
+            <img class ="object-fit" id="moon" src="https://i.ibb.co/dmWbH6P/210112-chess.png" alt="210112-chess">
             <div class ="parallax-about glass-effect" id="about">
                 <p class="crocoach">CroCoach</p>
             </div>
