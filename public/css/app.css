@@ -11030,7 +11030,6 @@ body {
   justify-content: center;
   height: auto;
   overflow: hidden;
-  border: 2px solid pink;
 }
 
 .pieces-above-packages {
@@ -11045,8 +11044,11 @@ body {
 
 .packages-container {
   width: 100%;
+  border: 2px dotted #3293ba;
+  padding-bottom: 30px;
+  border-radius: 20px;
   height: auto;
-  border: 2px solid yellow;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -11088,7 +11090,7 @@ body {
 .packages-container .packages-box:hover .packages-content h2 {
   opacity: 1;
   font-weight: 800;
-  transform: translateY(-90px);
+  transform: translateY(-100px);
 }
 
 .packages-container .packages-box .packages-content h3 {
@@ -11096,7 +11098,7 @@ body {
   width: 80%;
   height: 100%;
   color: #fff;
-  font-weight: 1200;
+  font-weight: 900;
   font-size: 300%;
   margin-bottom: 1%;
   z-index: 2;
@@ -11112,7 +11114,6 @@ body {
   height: 100%;
   margin: 1px;
   padding: 0;
-  border: 2px solid green;
   z-index: 2;
   opacity: 0.5;
   font-weight: 500;
@@ -11935,6 +11936,20 @@ body {
   text-shadow: 2px 2px 4px #000000;
 }
 
+@media (max-width: 560px) {
+  .title-packages {
+    font-size: 80%;
+  }
+
+  .title-improvement {
+    font-size: 80%;
+  }
+
+  .packages-content h3 {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 1025px) {
   html {
     min-width: 400px;
@@ -11946,6 +11961,7 @@ body {
   }
 
   .background {
+    min-width: 0;
     background-color: #f1f1f1;
     color: red;
     text-align: center;
@@ -11958,25 +11974,30 @@ body {
 
   .packages-box {
     width: 100%;
-    background-color: green;
-    color: green;
   }
 }
 
 @media (max-width: 1550px) {
-  .pieces-with-packages-container {
-    position: relative;
-    width: 100%;
-    border: 1px solid blue;
+  .pieces-above-packages {
+    margin: auto;
+    width: 20%;
   }
 
-  .packages-content {
-    width: 100%;
+  .packages-container {
+    display: grid;
+  }
+
+  .pieces-with-packages-container {
+    position: relative;
+    width: 90%;
+    height: auto;
+    min-width: 0;
+    margin: auto;
+    margin-top: 20px;
   }
 
   .packages-container .packages-box {
     margin: 0;
-    border: 6px solid red;
   }
 }
 
