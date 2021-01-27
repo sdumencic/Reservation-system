@@ -39646,23 +39646,20 @@ var _dateClick = function dateClick(info) {
   options.end = new moment(info.date).add(1, 'hour').format('DD.MM.YYYY HH:mm:ss [GMT] Z'); */
 
   options.start = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).format("YYYY-MM-DD HH:mm:ss");
-  options.end = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).add(1, "hour").format("YYYY-MM-DD HH:mm:ss");
-  options.userIf = 0; // Show the modal
+  options.end = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).add(1, "hour").format("YYYY-MM-DD HH:mm:ss"); // Show the modal
 
   $("#exampleModal").modal("show");
 };
 
 var _eventClick = function eventClick(info) {
   if (info.view.type !== "timeGridWeek") {
-    alert("Switch to Week view to edit or delete appointments.");
+    alert("Switch to Week view to delete appointments.");
     return;
   }
 
-  console.log(info);
   options.title = info.event.title;
   options.start = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).format("YYYY-MM-DD HH:mm:ss");
   options.end = new moment_timezone__WEBPACK_IMPORTED_MODULE_6__(info.date).add(1, "hour").format("YYYY-MM-DD HH:mm:ss");
-  options.userIf = 0;
   options.id = info.event.id;
   options.color = info.event.backgroundColor;
   options.textColor = info.event.textColor;

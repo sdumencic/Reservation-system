@@ -11925,6 +11925,16 @@ body {
   text-shadow: 2px 2px 4px #000000;
 }
 
+.jumbotron-welcome {
+  display: flex;
+  background-color: rgba(179, 179, 179, 0.7);
+}
+
+.img-welcome {
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
 .dashboard {
   height: auto;
 }
@@ -11962,6 +11972,20 @@ a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end.fc-event-fut
 .color {
   height: 20px;
   width: 20px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-columns {
+    -moz-column-count: 4;
+         column-count: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+    -moz-column-count: 5;
+         column-count: 5;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -12070,6 +12094,83 @@ a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end.fc-event-fut
     margin: 0 !important;
     padding: 0 !important;
     margin-left: 10px !important;
+  }
+
+  .crocoach {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .parallax-about {
+    position: relative;
+    color: white;
+    font-size: 5rem !important;
+    z-index: 1;
+    top: -100px;
+  }
+
+  .jumbotron-welcome {
+    display: block;
+    background-color: rgba(179, 179, 179, 0.7);
+  }
+
+  .jumbotron {
+    margin: 0 !important;
+  }
+
+  .img-welcome {
+    border-radius: 20px;
+    margin: 10px 0;
+    display: none;
+  }
+
+  .col {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1025px) {
+  html {
+    min-width: 400px;
+  }
+
+  .crocoach {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .parallax-about {
+    position: relative;
+    color: white;
+    font-size: 7rem;
+    z-index: 1;
+    top: -100px;
+  }
+
+  .img-welcome {
+    border-radius: 20px;
+    margin: 10px 0;
+    display: none;
+  }
+
+  .jumbotron-welcome {
+    display: block;
+    background-color: rgba(179, 179, 179, 0.7);
+    margin: 0;
+  }
+
+  .jumbotron {
+    margin: 0 !important;
+  }
+
+  .col {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    padding-bottom: 20px;
   }
 }
 
