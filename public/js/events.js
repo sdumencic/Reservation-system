@@ -39743,7 +39743,7 @@ var addEvents = function addEvents(events) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp8\htdocs\reservationsystem\resources\js\events.js */"./resources/js/events.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\reservationsystem\resources\js\events.js */"./resources/js/events.js");
 
 
 /***/ })
