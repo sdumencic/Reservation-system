@@ -67,8 +67,11 @@
                     <div class="jumbotron"
                         style="margin:2rem; width: 100%; background-color:rgb(241, 241, 241); text-align:center;">
                         <h1 class="display-4 title-shadow" style="font-weight:900; color:rgb(22, 66, 83)">Interested in chess lessons?</h1>
-                        <p class="lead">Welcome to my chess page! I am Sandro and I want to help you with your chess.
-                            Find out what makes me the perfect fit for your chess game.
+                        <p class="lead">Welcome to my coaching page! <br>
+                        My name is Sandro and I want to help you improve <br><br>
+
+
+                        Find out what makes me the perfect fit for your chess game!
                         </p>
                         <hr class="my-4">
                         <a class="btn btn-lg" href="/about" role="button"
@@ -80,7 +83,7 @@
                 </div>
             </div>
 
-        <h1 class="testimonials title-shadow">Testimonials</h1>
+        <h1 class="testimonials title-shadow">Featured testimonials</h1>
         <div class="testimonials-f">
             <div class="row">
                 <div class="col-md-12">
@@ -89,7 +92,7 @@
                             <div class="single-box testimonials-card">
                                 <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                 <div class="img-text">
-                                    <h2>Person one</h2>
+                                    <h2>Drew (USA)</h2>
                                     <p class="testimonials-comment">"Sandro and I began doing lessons at
                                         the beginning od 2020 and I've seen massive jumps in my rating
                                         and strength,
@@ -113,7 +116,7 @@
                             <div class="single-box testimonials-card">
                                 <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                 <div class="img-text">
-                                    <h2>Person 2</h2>
+                                    <h2>Cameron (USA)</h2>
                                     <p class="testimonials-comment">"Sandro is a chess prodigy. So far
                                         we have completed only 1 session, but I plan on cintinuing with
                                         him.
@@ -132,7 +135,7 @@
                             <div class="single-box testimonials-card">
                                 <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                 <div class="img-text">
-                                    <h2>Person 3</h2>
+                                    <h2>Evan (USA)</h2>
                                     <p class="testimonials-comment">"This was my first Fiverr purchase.
                                         While I've studied a bit by myself, I found myself stuck and
                                         unsure of what to do next.

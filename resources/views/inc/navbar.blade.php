@@ -12,13 +12,13 @@
                 <a class="nav-link navbar-card" href="/history">History</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navbar-card" href="/contact">Contact</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link navbar-card" href="/about">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link navbar-card" href="/packages">Packages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-card" href="/contact">Contact</a>
             </li>
         </ul>
         @if (Route::has('login'))
