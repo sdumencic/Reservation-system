@@ -1,61 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# CroCoach
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Content
+- [CroCoach](#crocoach)
+  - [Content](#content)
+  - [About this project](#about-this-project)
+  - [How to run this project](#how-to-run-this-project)
+  - [Design and UI](#design-and-ui)
+    - [Home page](#home-page)
+    - [Reservation calendar](#reservation-calendar)
+    - [History of reservations](#history-of-reservations)
+    - [Dashbaord](#dashbaord)
+    - [Log in](#log-in)
+    - [View for packages](#view-for-packages)
+  - [License](#license)
 
-## About Laravel
+## About this project
+This is a simple reservation system for chess lessons made in Laravel.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Additional packages and libraries:
+- FullCalendar
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## How to run this project
+Download or git clone this folder
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Clone the repository to *C:\xampp\htdocs* 
 
-## Learning Laravel
+Go to  *C:\Windows\System32\drivers\etc* and open file *hosts*, there you should write 
+```
+127.0.0.1 localhost
+127.0.0.1 reservationsystem.test
+```
+at the bottom. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Also, you will need to open *C:\xampp\apache\conf\extra* and open file httpd-vhosts.conf and paste following code at the bottom:
+```
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs"
+    ServerName localhost
+</VirtualHost>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs/reservationsystem/public"
+    ServerName reservationsystem.test
+</VirtualHost>
+```
+Turn on xampp for Apache and MySQL.
 
-## Laravel Sponsors
+Now you are ready to open your project folder in VS Code.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+1. ```npm install```
+2. ```composer install```
+3. Copy the *.env.example.* to a new *.env* file ```cp .env.example .env```
+4. Generate app_key ```php artisan key:generate``` 
+5. Go to PhpMyAdmin (open xampp -> in the row where MySQL is press Admin), now Create new Table, give it a name, put charset to utf8mb4_unicode_ci
+6. Go to .env file in VS Code and put the name of DB_DATABASE=*the name you gave the table*
+7. ```php artisan migrate```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+For running this project in a browser, you will need to turn on Apache and MySQL in xampp and write reservationsystem.test in the URL.
 
-## Contributing
+## Design and UI
+### Home page
+<img src="https://i.ibb.co/VN78DBx/Screenshot-2021-01-31-Cro-Coach.png" alt="Screenshot-2021-01-31-Cro-Coach">
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Reservation calendar
+<img src="https://i.ibb.co/Ry9sKWM/Screenshot-2021-01-31-Cro-Coach-Events.png" alt="Screenshot-2021-01-31-Cro-Coach-Events">
 
-## Code of Conduct
+### History of reservations
+Admin can see reservations from all users
+<img src="https://i.ibb.co/TYM0xy2/Screenshot-2021-01-31-Cro-Coach-4.png" alt="Screenshot-2021-01-31-Cro-Coach-4">
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Dashbaord
+<img src="https://i.ibb.co/bgYwd8q/Screenshot-2021-01-31-Cro-Coach-3.png" alt="Screenshot-2021-01-31-Cro-Coach-3">
 
-## Security Vulnerabilities
+### Log in
+<img src="https://i.ibb.co/9Zm5Vn2/Screenshot-2021-01-31-Cro-Coach-2.png" alt="Screenshot-2021-01-31-Cro-Coach-2">
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### View for packages
+<img src="https://i.ibb.co/5WJLCvQ/Screenshot-2021-01-31-Cro-Coach-5.png" alt="Screenshot-2021-01-31-Cro-Coach-5">
+
 
 ## License
 
