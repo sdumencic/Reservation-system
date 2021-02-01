@@ -1,35 +1,6 @@
-@push('scripts')
-    <script>
-        const sliders = document.querySelectorAll('.slide-in');
-
-        const options = {
-            threshold: 0,
-            rootMargin: "0px 0px -100px 0px"
-        };
-
-        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    return;
-                } else {
-                    entry.target.classList.add("appear");
-                    appearOnScroll.unobserve(entry.target);
-                }
-            });
-        }, options);
-
-        sliders.forEach(slider => {
-            appearOnScroll.observe(slider);
-            console.log(slider);
-        });
-
-    </script>
-@endpush
-
 <x-app-layout>
     <div style="display:flex; background-color:rgba(179, 179, 179, 0.7);">
-        <div class="jumbotron"
-            style="margin:2rem; width: 100%; background-color:rgb(241, 241, 241); text-align:center;">
+        <div class="jumbotron background">
             <h1 class="display-4 title title-shadow" style="margin-bottom: 7%;">History of chess</h1>
             <div class="container text">
                 <div class="row margin20">
@@ -38,9 +9,9 @@
                         but it was probably in India, before the 6th century AD. In India it was called
                         chaturaṅga,
                         which translates as "four divisions of the military". The four divisions were infantry,
-                        calary,
+                        cavalry,
                         elephantry and chariotry.
-                        These divisions evolved into todays pawn, knight, bishop and rook, respectively.
+                        These divisions evolved into todays pawn, knight, bishop and rook - respectively.
                         From India, the game spread to Persia.
                         When the Arabs conquered Persia, chess spread to
                         Southern Europe.
@@ -55,10 +26,10 @@
                         <img class="history-slika" src="https://i.ibb.co/1sf1Tbn/Shatranj.jpg" alt="Shatranj">
                     </div>
                     <div class="col-sm slide-in from-right">
-                        In 6th century the game of chatrang is mensiond in Persian Empire.
+                        In the 6th century the game of chatrang is mentioned in Persian Empire.
                         When Arabs conquered persia, chess spread to the Arab world where the name changed to
                         shatranj.
-                        Arabs held tournaments between best chess players.
+                        Arabs held tournaments between the best chess players.
                         They also studied chess openings.
                         Arabs spread chess to Spain in South Europe.
                     </div>
@@ -69,7 +40,7 @@
                         activity
                         of the
                         queen and bishop.
-                        Todays chess as we know it, originated in 1497 when the first printed work on chess was
+                        Today's chess as we know it originated in 1497 when the first printed work on chess was
                         written by
                         the Spanish chess player Lucena.
                     </div>
@@ -123,7 +94,7 @@
                         The current World Chess Champion in Magnus Carlsen from Norway.
                         His highest ELO is 2882 which is the highest rating someone ever had in the history of
                         chess.
-                        He got the title of a grandmaster with only 13 years.
+                        He got the title of a grandmaster at only 13 years of age.
                     </div>
                 </div>
             </div>
@@ -139,4 +110,32 @@
                 I'm ready
             </a>
         </div>
+
+        @push('scripts')
+            <script>
+                const sliders = document.querySelectorAll('.slide-in');
+
+                const options = {
+                    threshold: 0,
+                    rootMargin: "0px 0px -100px 0px"
+                };
+
+                const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+                    entries.forEach(entry => {
+                        if (!entry.isIntersecting) {
+                            return;
+                        } else {
+                            entry.target.classList.add("appear");
+                            appearOnScroll.unobserve(entry.target);
+                        }
+                    });
+                }, options);
+
+                sliders.forEach(slider => {
+                    appearOnScroll.observe(slider);
+                    console.log(slider);
+                });
+
+            </script>
+        @endpush
 </x-app-layout>

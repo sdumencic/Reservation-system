@@ -1,13 +1,13 @@
 <x-app-layout>
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
         <div class="grid grid-cols-1 md:grid-cols-2" style="display:flex; background-color:rgba(179, 179, 179, 0.7);">
-            <div class="jumbotron" style="margin:2rem; width: 100%; height:100%; background-color:rgb(241, 241, 241); text-align:center;">
+            <div class="jumbotron background" style="margin:2rem; width: 100%; height:100%; background-color:rgb(241, 241, 241); text-align:center;">
                 <h1 class="display-4 title title-shadow" style = "font-size:500%;margin-bottom: 1%">Looking to improve at chess?</h1>
                 <h4 class="display-4 title title-shadow" style = "font-size:250%;margin-bottom: 1%">Feeling stuck in certain situations of the game?</h4>
                 <h5 class="display-4 title title-shadow" style = "font-size:200%;margin-bottom: 1%">Want to better your understanding of the game?</h5>
                 <h6 class="display-4 title title-shadow" style = "font-size:175%;margin-bottom: 1%">Need some structured guidance?</h6>
                 <br>
-                <div class = "about-me-grid" style = "margin: 2%">
+                <div class = "about-me-grid">
                     <div class = "about-me-grid-item box" style = " width: 100%; height: 100%;">
                         <div class = "box-fill">
                             <div class = "content">
@@ -46,12 +46,12 @@
                         </div>
                     </div>
 
-                    <div class = "about-me-grid-item" style = "margin-left: 5%; width:95%">
+                    <div class = "about-me-grid-item" style = "margin-left: 5%; height:100%">
                         <img class = "my-image" src="https://i.ibb.co/0mRQR5v/Me2.jpg">
                     </div>
 
                     <div class = "about-me-grid-item-two-columns" style = "text-align:left">
-                        <h1 class = "display-4 title title-shadow" style="margin-top:5%;margin-bottom:2%;text-decoration:underline" >Credentials</h1>
+                        <h1 class = "display-4 title title-shadow" style="font-size:350%; margin-top:5%;margin-bottom:2%; margin-left: 3%; text-decoration:underline;" >Credentials</h1>
                         <br>
                         <h3 class = "title title-shadow" style = "text-align: center; font-size: 360%; margin-bottom: 0%"> What makes me qualified to solve your problems?</h3>
                         <div class = "credentials-list">
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class = "about-me-grid-item-two-columns">
-                        <h1 class = "display-4 title title-shadow" style="margin-top: 3%; margin-bottom: 0% ;text-decoration:underline; text-align:left;">Testimonials</h1>
+                        <h1 class = "display-4 title title-shadow" style="font-size:330%; margin-top: 3%; margin-bottom: 0% ;text-decoration:underline; text-align:left;">Testimonials</h1>
                     </div>
                     <div class = "about-me-grid-item-two-columns">
                         <div class = "slider-area">
@@ -92,14 +92,13 @@
 
                                     <div class="carousel-inner">
 
-                                    <div class="carousel-item active">  <!-- First visible item  -->
+                                    <div class="carousel-item active">
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                         <h5>Agatti (Italy)</h5>
                                         <p>"Sandro is a phenomenal chess coach. I really enjoyed the first lesson with him. <br>
-                                            He delivered so many advices while playing with me, justifying every move he made <br>
-                                            and giving ideas and hints on what I should have played, and why. <br><br>
+                                            He delivered so many advices while playing with me, justifying every move he made and giving ideas and hints on what I should have played, and why. <br><br>
                                             Definitely a very skilled coach and an easy going person, to work with."</p>
                                         </div>
                                     </div>
@@ -108,11 +107,10 @@
                                         <div class="img-area">
                                             <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="...">
                                         </div>
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                         <h5>Lena (USA)</h5>
                                         <p>"Sandro was a great coach. <br>
-                                            He walked me through all of my gameplay, where I made mistakes, <br>
-                                            and what the most optimal move would have been. <br>
+                                            He walked me through all of my gameplay, where I made mistakes, and what the most optimal move would have been. <br>
                                             He answered all of my questions about strategy and rules. <br><br>
                                             I would definitely recommend his service! :)"</p>
                                         </div>
@@ -121,7 +119,7 @@
                                     <div class="carousel-item">
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                         <h5>Matt (UK)</h5>
                                         <p>"Very friendly and educational. Lesson style was very engaging."</p>
                                         </div>
@@ -130,7 +128,7 @@
                                     <div class="carousel-item">
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                         <h5>Jake (USA)</h5>
                                         <p>"Excellent coaching experience throughout our lessons. <br>
                                             Everything was tailored to my pace and needs. <br>
@@ -143,7 +141,7 @@
                                     <div class="carousel-item">
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                         <h5>Cody (Canada)</h5>
                                         <p>"Sandro was very professional and very helpful. <br>
                                             He was wonderful to speak with and explained everything logically and made sure I understood everything before continuing."</p>
@@ -153,11 +151,10 @@
                                     <div class="carousel-item">
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                         <h5>Dylan (USA)</h5>
                                         <p>"Super helpful, during and after the session.<br>
-                                            Answered any and all questions that I had, <br>
-                                            and explained in detail info about any uncertainties that I still had. <br><br>
+                                            Answered any and all questions that I had, and explained in detail info about any uncertainties that I still had. <br><br>
                                             10/10 would definitely recommend"</p>
                                         </div>
                                     </div>
@@ -165,7 +162,7 @@
                                     <div class="carousel-item">
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                         <h5>Ola (Sweden)</h5>
                                         <p>"If having chosen my definite coach after one session is wrong, I don't want to be right."</p>
                                         </div>
@@ -174,10 +171,9 @@
                                     <div class="carousel-item">
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                         <h5>Ahmed (Saudi Arabia)</h5>
-                                        <p>"Sandro is an amazing coach and he is one of the best teachers that I have ever had <br>
-                                            and he has an excellent way of explaining chess tactics. <br>
+                                        <p>"Sandro is an amazing coach and he is one of the best teachers that I have ever had and he has an excellent way of explaining chess tactics. <br>
                                             I am very happy with the service and I recommend and I will definitely buy it again."</p>
                                         </div>
                                     </div>
@@ -185,7 +181,7 @@
                                     <div class="carousel-item">
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                         <h5>Jacques (South Africa) </h5>
                                         <p>"I loved working with Sandro on my game. <br>
                                             I have been stuck at my level for a while and I needed a different perspective on how to improve my game. <br>
@@ -196,7 +192,6 @@
                                     </div>
 
                                     </div>
-                                    <!-- L/R navigation -->
                                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon btn-span" aria-hidden="true"></span>
                                     <span class="sr-only btn-span">Previous</span>

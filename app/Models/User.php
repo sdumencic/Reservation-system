@@ -58,4 +58,16 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function events() {
+        return $this->hasMany('App\Models\Event');
+    }
+
+    public function roles() {
+        return $this->belongsToMany('App\Models\Role');
+    }
+
+    public function hasAnyRole($role) {
+        return null !== $this->roles()->where('name', $role)->first();
+    }
 }
