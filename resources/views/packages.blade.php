@@ -31,7 +31,7 @@
                                     <li> Availability to questions, reply within 10 hours <small>(nighttime excluded)</small> </li>
                                     <li> Access to 2 books per month </li>
                                     <li> Written analysis of key moments of any game you send me</li>
-                                    <li> Optional accountability check every 3 days</li>
+                                    <li> Accountability check once a week</li>
                                 </ul>
 
                             </div>
@@ -63,6 +63,7 @@
                                     <li> Access to 5 of my Lichess studies </li>
                                     <li> A game with me once a week with analysis</li>
                                     <li> Written in-depth explanation and analysis of any game you send me </li>
+                                    <li> Accountability check once in 2 days </li>
                                 </ul>
 
                             </div>
@@ -95,6 +96,7 @@
                                     <li> Full access to all of my Lichess studies </li>
                                     <li> A game with me twice a week with deep analysis and pinpointing mistakes </li>
                                     <li> Full in-depth video analysis of any game you send me </li>
+                                    <li> Accountability check every day</li>
                                 </ul>
                             </div>
                         </div>
