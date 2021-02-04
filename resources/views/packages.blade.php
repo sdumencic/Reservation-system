@@ -85,7 +85,7 @@
                             <div class = "packages-content">
 
                                 <h2 class = "title-shadow">$500<h2>
-                                <h3>Comitted</h3>
+                                <h3>Committed</h3>
                                 <p>You're very intrigued by and/or highly passionate about chess</p>
                                 <hr style = "border:1px solid white; margin:0; padding:0; margin:20px">
 
