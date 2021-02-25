@@ -120,8 +120,11 @@
                                         <div class="img-area">
                                         <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
-                                        <h5>Matt (UK)</h5>
-                                        <p>"Very friendly and educational. Lesson style was very engaging."</p>
+                                        <h5>Austin (USA)</h5>
+                                        <p>"Sandro's response was almost immediate.<br>
+                                            I really appreciated how he walked through the thought process of making a move rather than regurgitating openings. <br>
+                                            I was so satisfied I've already made a second appointment and plan to make a third after that.<br><br>
+                                            Couldn't recommend him enough!"</p>
                                         </div>
                                     </div>
 

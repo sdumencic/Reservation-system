@@ -87,25 +87,50 @@
         <div class="testimonials-f">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="row testimonials-height">
+                    <div class="row testimonials-height" style = "margin-bottom: 50px">
+                        <div class="col">
+                            <div class="single-box testimonials-card">
+                                <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
+                                <div class="img-text">
+                                    <h2>Evan (USA)</h2>
+                                    <p class="testimonials-comment">"When it comes to chess coaches, Sandro was hands down the go-to for me.
+                                        I was nervous about finding a chess coach at first, wondering if this type of investment was for me.
+                                        However, after several months, if not years, of being stuck at my old peak I knew it was time for change
+                                        if I wanted to see some serious gains in my playing abilities.<br><br>
+
+                                        I first found Sandro on Fiverr, and while they are still my coach,
+                                        I believe Sandro to be a mentor / friend who seeks to help you push past your current barriers.
+                                        I was stuck at around 1750 before running into Sandro, and now I currently sit at 1930 and am still seeing improvements.
+                                        Without them, I would still be making the same mistakes and wouldn't see the improvements I have had thus far.<br><br>
+
+                                        I owe a lot of my progress to Sandro for not only taking the time to create personal studies for me based on my openings,
+                                        (The French Defense and the English Opening), but for helping me spot tactics, middle game ideas, and being better prepared for the end game.
+                                        And while I still have a lot of room to improve, I think Sandro will continue to help me achieve my personal goals in the game.<br><br>
+
+                                        Here's to creating new goals in the future, and here's to improving with Sandro as my teacher.
+
+                                        They truly know what they are doing, and for that, I'm thankful. He has made all of my mistakes already, so I don't have to.
+                                        They will truly help you push yourself to new frontiers in your chess."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col">
                             <div class="single-box testimonials-card">
                                 <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                 <div class="img-text">
                                     <h2>Drew (USA)</h2>
                                     <p class="testimonials-comment">"Sandro and I began doing lessons at
-                                        the beginning od 2020 and I've seen massive jumps in my rating
-                                        and strength,
-                                        OTB and online. Not only is he a very strong player, but also a
-                                        very patient and thoughtful coach.
-                                        He has many interactive studies which were extremly helpful - if
+                                        the beginning of 2020 and I've seen massive jumps in my rating
+                                        and strength, OTB and online. <br><br>
+                                        Not only is he a very strong player, but also a
+                                        very patient and thoughtful coach.<br><br>
+                                        He has many interactive studies which were extremely helpful - if
                                         there was a problem I had on the board,
-                                        Sandro had or even created a study to help me.
+                                        Sandro had or even created a study to help me.<br><br>
                                         I started around 1300-1400 (chess.com) with Sandro and over a
                                         period of around a year with a good amount of study and
-                                        coaching,
-                                        I am around 1900 now and have even beat a handful of 2000+ rated
-                                        players.
+                                        coaching, I am around 1900 now and have even beat a handful of 2000+ rated players.<br><br>
                                         If you want to improve, I have no doubts Sandro can help your
                                         sticking points in chess."
                                     </p>
@@ -117,44 +142,21 @@
                                 <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
                                 <div class="img-text">
                                     <h2>Cameron (USA)</h2>
-                                    <p class="testimonials-comment">"Sandro is a chess prodigy. So far
-                                        we have completed only 1 session, but I plan on cintinuing with
-                                        him.
+                                    <p class="testimonials-comment">"Sandro is a chess prodigy. <br>So far
+                                        we have completed only 1 session, but I plan on continuing with
+                                        him.<br>
                                         He identified my gameplay and made proper corrections that are
-                                        very SIMPLE to learn.
+                                        very SIMPLE to learn.<br><br>
                                         As an American I was concerned there would be a language
-                                        barrier, but his english is A+++++.
-                                        I know for a fact my chess will improve with Sandro. He is
-                                        attentive, kind and a wonderful teacher.
+                                        barrier, but his english is A+++++.<br><br>
+                                        I know for a fact my chess will improve with Sandro. <br>
+                                        He is attentive, kind and a wonderful teacher.<br>
                                         I am very pleased."
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="single-box testimonials-card">
-                                <div class="img-area"><img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
-                                <div class="img-text">
-                                    <h2>Evan (USA)</h2>
-                                    <p class="testimonials-comment">"This was my first Fiverr purchase.
-                                        While I've studied a bit by myself, I found myself stuck and
-                                        unsure of what to do next.
-                                        However, Sandro completely helped me point out some of my major
-                                        issues, things I need to improve on, and so forth.
-                                        His reviews are 100% true, as everything was a positive
-                                        experience!
-                                        Clear communication, reached out to me and was able to send
-                                        instructions via Discord (my preferred platform).
-                                        He is a strong player, and I look forward to more lessons to
-                                        help reach my goals.
-                                        Thank you again, Sandro, for your help and sharing your
-                                        knowledge.
-                                        I'mm looking forward to our future lessons.
-                                        If you're looking for quality, I recommend Sandro."
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
