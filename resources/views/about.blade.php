@@ -94,7 +94,7 @@
 
                                     <div class="carousel-item active">
                                         <div class="img-area">
-                                        <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
+                                        <img src="https://i.ibb.co/kM8kQ0j/Testimonial-image-Agatti.jpg" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
                                         <h5>Agatti (Italy)</h5>
                                         <p>"Sandro is a phenomenal chess coach. I really enjoyed the first lesson with him. <br>
@@ -105,7 +105,7 @@
 
                                     <div class="carousel-item">
                                         <div class="img-area">
-                                            <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="...">
+                                            <img src="https://i.ibb.co/gMPvYJM/anonymous-user-gravatar-0.png" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="carousel-caption">
                                         <h5>Lena (USA)</h5>
@@ -118,7 +118,7 @@
 
                                     <div class="carousel-item">
                                         <div class="img-area">
-                                        <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
+                                        <img src="https://i.ibb.co/syTDn18/Testimonial-image-Austin.png" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
                                         <h5>Austin (USA)</h5>
                                         <p>"Sandro's response was almost immediate.<br>
@@ -130,7 +130,7 @@
 
                                     <div class="carousel-item">
                                         <div class="img-area">
-                                        <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
+                                        <img src="https://i.ibb.co/wch6mps/Testimonial-image-Jake.jpg" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
                                         <h5>Jake (USA)</h5>
                                         <p>"Excellent coaching experience throughout our lessons. <br>
@@ -143,7 +143,7 @@
 
                                     <div class="carousel-item">
                                         <div class="img-area">
-                                        <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
+                                        <img src="https://i.ibb.co/bXRQnnB/Testimonial-image-Cody.jpg" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
                                         <h5>Cody (Canada)</h5>
                                         <p>"Sandro was very professional and very helpful. <br>
@@ -153,18 +153,18 @@
 
                                     <div class="carousel-item">
                                         <div class="img-area">
-                                        <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
+                                        <img src="https://i.ibb.co/yXP6rKC/Testimonial-image-David.png" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
-                                        <h5>Dylan (USA)</h5>
-                                        <p>"Super helpful, during and after the session.<br>
-                                            Answered any and all questions that I had, and explained in detail info about any uncertainties that I still had. <br><br>
-                                            10/10 would definitely recommend"</p>
+                                        <h5>David (USA)</h5>
+                                        <p>"I got a package of lessons for my dad for Christmas, and it was one of my best Christmas gifts to date! <br>
+                                            Sandro is an excellent teacher. Very well spoken, patient and attentive to the players goals! <br><br>
+                                            I would recommend him 100% of the time to anyone looking to get more serious about chess."</p>
                                         </div>
                                     </div>
 
                                     <div class="carousel-item">
                                         <div class="img-area">
-                                        <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
+                                        <img src="https://i.ibb.co/VM3gw2m/Testimonial-image-Ola.png" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
                                         <h5>Ola (Sweden)</h5>
                                         <p>"If having chosen my definite coach after one session is wrong, I don't want to be right."</p>
@@ -173,7 +173,7 @@
 
                                     <div class="carousel-item">
                                         <div class="img-area">
-                                        <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
+                                        <img src="https://i.ibb.co/8PRpxy9/Testimonial-image-Ahmed.jpg" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
                                         <h5>Ahmed (Saudi Arabia)</h5>
                                         <p>"Sandro is an amazing coach and he is one of the best teachers that I have ever had and he has an excellent way of explaining chess tactics. <br>
@@ -183,7 +183,7 @@
 
                                     <div class="carousel-item">
                                         <div class="img-area">
-                                        <img src="https://i.ibb.co/DYPV4Cd/anonymous-user-gravatar-0.png" class="d-block w-100" alt="..."></div>
+                                        <img src="https://i.ibb.co/H7H2W6P/Testimonial-image-Jacques.jpg" class="d-block w-100" alt="..."></div>
                                         <div class="carousel-caption">
                                         <h5>Jacques (South Africa) </h5>
                                         <p>"I loved working with Sandro on my game. <br>
