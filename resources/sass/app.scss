@@ -451,8 +451,8 @@ body {
 }
 
 .img-area {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin: auto;
     border: 3px solid #fff;
     border-radius: 50%;
@@ -1035,6 +1035,20 @@ a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end.fc-event-fut
     }
 }
 
+.profile-img {
+    border-radius: 10%; margin-bottom: 50px
+}
+
+.js-cookie-consent {
+    background-color: white;
+    margin-top: 20%;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    font-size: 20px;
+}
+
 @media (max-width: 770px) {
     .background {
         background-color: rgb(241, 241, 241);
@@ -1253,6 +1267,14 @@ a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end.fc-event-fut
     }
     .packages-container .packages-box {
         margin: 0;
+    }
+
+    .img-area {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border: 3px solid #fff;
+        overflow: hidden;
     }
 }
 
