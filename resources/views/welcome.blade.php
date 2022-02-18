@@ -90,7 +90,7 @@
                     <div class="row testimonials-height" style = "margin-bottom: 50px">
                         <div class="col">
                             <div class="single-box testimonials-card">
-                                <div class="img-area profile-img"><img src="https://i.ibb.co/9VyXd5Z/Testimonial-image-Evan.jpg" class="d-block w-100" alt="Testimonial_Image_1"></div>
+                                <div class="img-area" style = "width: 50%; height: auto; border-radius: 10%; margin-bottom: 50px"><img src="https://i.ibb.co/9VyXd5Z/Testimonial-image-Evan.jpg" class="d-block w-100" alt="Testimonial_Image_1"></div>
                                 <div class="img-text">
                                     <h2>Evan (USA)</h2>
                                     <p class="testimonials-comment">"When it comes to chess coaches, Sandro was hands down the go-to for me.
@@ -117,7 +117,7 @@
                         </div>
                         <div class="col">
                             <div class="single-box testimonials-card">
-                                <div class="img-area profile-img"><img src="https://i.ibb.co/qj7T1fV/Testimonial-image-Drew.jpg" class="d-block w-100" alt="Testimonial_Image_2"></div>
+                                <div class="img-area" style = "width: 50%; height: auto; border-radius: 10%; margin-bottom: 50px"><img src="https://i.ibb.co/qj7T1fV/Testimonial-image-Drew.jpg" class="d-block w-100" alt="Testimonial_Image_2"></div>
                                 <div class="img-text">
                                     <h2>Drew (USA)</h2>
                                     <p class="testimonials-comment">"Sandro and I began doing lessons at
@@ -139,7 +139,7 @@
                         </div>
                         <div class="col">
                             <div class="single-box testimonials-card">
-                                <div class="img-area profile-img"><img src="https://i.ibb.co/74Yd1zY/Anonymous-image.png" class="d-block w-100" alt="Testimonial_Image_3"></div>
+                                <div class="img-area" style = "width: 50%; height: auto; border-radius: 10%; margin-bottom: 50px"><img src="https://i.ibb.co/74Yd1zY/Anonymous-image.png" class="d-block w-100" alt="Testimonial_Image_3"></div>
                                 <div class="img-text">
                                     <h2>Cameron (USA)</h2>
                                     <p class="testimonials-comment">"Sandro is a chess prodigy. <br>So far
