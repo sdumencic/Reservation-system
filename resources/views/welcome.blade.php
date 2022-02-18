@@ -78,7 +78,7 @@
                             style="background-color:rgb(22, 66, 83); color:white; margin-top:20px;">Meet Sandro</a>
                     </div>
                     <div style="width:20%; margin: 20px 20px; margin-right: 20%;">
-                        <img class="img-welcome" src="https://i.ibb.co/FgR3ptj/crocoach.png">
+                        <img class="img-welcome" src="https://i.ibb.co/v33ZP87/Vyley2.png" height="450px" width="450px" alt="logo">
                     </div>
                 </div>
             </div>

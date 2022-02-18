@@ -189,7 +189,7 @@ body {
 
 .packages-container .packages-box .packages-content h3 {
     position: relative;
-    width: 80%;
+    width: 100%;
     height: 100%;
     color: #fff;
     font-weight: 900;
@@ -203,7 +203,7 @@ body {
 
 .packages-container .packages-box .packages-content p {
     position: relative;
-    width: 75%;
+    width: 100%;
     font-size: auto;
     height: 100%;
     margin: 1px;
@@ -864,9 +864,6 @@ body {
 
 .testimonials-height {
     height: auto;
-}
-
-.img-text {
 }
 
 .col {

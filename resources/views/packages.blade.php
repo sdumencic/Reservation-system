@@ -20,8 +20,6 @@
                             <span class = "packages-span"></span>
 
                             <div class = "packages-content">
-
-                                <h2 class = "title-shadow">$175</h2>
                                 <h3>Casual</h3>
                                 <p>Chess is not your priority, but you'd like to gradually improve</p>
                                 <hr style = "border:1px solid white; margin:0; padding:0; margin: 20px">
@@ -50,8 +48,6 @@
                             <span class = "packages-span"></span>
                             <span class = "packages-span"></span>
                             <div class = "packages-content">
-
-                                <h2 class = "title-shadow">$300<h2>
                                 <h3>Serious</h3>
                                 <p>You're willing to invest to improve your game and get results much faster</p><br>
                                 <hr style = "border:1px solid white; margin:0; padding:0; margin: 20px; margin-top: 0">
@@ -83,8 +79,6 @@
                             <span class = "packages-span"></span>
                             <span class = "packages-span"></span>
                             <div class = "packages-content">
-
-                                <h2 class = "title-shadow">$500<h2>
                                 <h3>Committed</h3>
                                 <p>You're very intrigued by and/or highly passionate about chess</p>
                                 <hr style = "border:1px solid white; margin:0; padding:0; margin:20px">
@@ -117,8 +111,6 @@
                             <span class = "packages-span"></span>
                             <span class = "packages-span"></span>
                             <div class = "packages-content">
-
-                                <h2 class = "title-shadow">$30</h2>
                                 <h3 class = "title">Starting out <br>(< 1200)</h3>
                                 <p>Master all the basics for a very solid foundation</p>
                                 <hr style = "border:1px solid white; margin:0; padding:0; margin-bottom: 20px">
@@ -203,8 +195,6 @@
                             <span class = "packages-span"></span>
                             <span class = "packages-span"></span>
                             <div class = "packages-content">
-
-                                <h2 class = "title-shadow">$35</h2>
                                 <h3 class = "title"><b class = "title-improvement">Improvement <br>(< 1700)</b></h3>
                                 <p>Transform and upgrade your game!</p>
                                 <hr style = "border:1px solid white; margin:0; padding:0; margin-bottom: 20px">
@@ -294,8 +284,6 @@
                             <span class = "packages-span"></span>
                             <span class = "packages-span"></span>
                             <div class = "packages-content">
-
-                                <h2 class = "title-shadow">$40</h2>
                                 <h3 class = "title" style = "font-size: 280%; margin-bottom: 1%">Going semi-pro <br>(> 1700)</h3>
                                 <p style = "margin-bottom: 0">Take your game to serious levels</p>
                                 <hr style = "border:1px solid white; margin:0; padding:0; margin-bottom: 20px">

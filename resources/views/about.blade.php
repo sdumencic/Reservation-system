@@ -16,7 +16,7 @@
                                 <hr style="border:1px solid white">
 
                                 <h3 class = "meet-me" style="color:rgb(18,140,240)"><b> Welcome! </b> </h3>
-                                My name is Sandro, I am a 21 year old student from Croatia and I'm here to help <b> YOU </b> improve your chess game! <br>
+                                My name is Sandro, I am a 22 year old student from Croatia and I'm here to help <b> YOU </b> improve your chess game! <br>
                                 It has always been my dream to help people reach their <b>goals</b> which is why I'm thrilled to be able to do so by also sharing my passion! <br> <br>
                                 Whether your goal is to learn the logic behind the game, enjoy the beauty of the game, beat some friends, break a rating barrier
                                 or get into tournaments and travel the world - you will reach your goals in no time!<br>
@@ -60,7 +60,7 @@
                                 <li><em><p><b>Top 1%</b> of players in the Bullet and the Blitz categories on Lichess.org, one of the biggest online chess platforms</p></li>
                                 <li><p>Over 35 trophies and 100 medals from real life tournaments, including international ones</p></li>
                                 <li><p>Number 2 in Puzzles (Tactics) for Croatia on Chess.com with <b>over 3200 </b>rating points</p></li>
-                                <li><p>Successfully helped <b>over 100 people from 17 different countries</b> reach their <b>goals</b></p></li>
+                                <li><p>Successfully helped <b>over 100 people from 24 different countries</b> reach their <b>goals</b></p></li>
                                 <li><p><b>Over 2600</b> rating in Bullet and in Blitz on chess24.com</p></li>
                                 <li><p><b>Top 10</b> Croatian Bullet chess players on Chess.com</p></li>
                                 <li><p>Rated <b>2264 ELO</b> at the moment (peak rating)</p></li>
