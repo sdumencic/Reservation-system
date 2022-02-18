@@ -25,8 +25,8 @@
 <body class="bg-light">
     @include('inc.navbar')
 
-    <!-- Page Content -->
     <main class="">
+        @include('cookie-consent::index')
         {{ $slot }}
     </main>
 
