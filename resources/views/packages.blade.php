@@ -49,7 +49,7 @@
                             <span class = "packages-span"></span>
                             <div class = "packages-content">
                                 <h3>Serious</h3>
-                                <p>You're willing to invest to improve your game and get results much faster</p><br>
+                                <p>You're willing to invest to get results much faster</p><br>
                                 <hr style = "border:1px solid white; margin:0; padding:0; margin: 20px; margin-top: 0">
 
                                 <ul style = "text-align: left">
