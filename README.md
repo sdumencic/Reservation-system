@@ -61,23 +61,23 @@ For running this project in a browser, you will need to turn on Apache and MySQL
 
 ## Design and UI
 ### Home page
-<img src="https://i.ibb.co/VN78DBx/Screenshot-2021-01-31-Cro-Coach.png" alt="Screenshot-2021-01-31-Cro-Coach">
+<img src="images/1.png" alt="home page">
 
 ### Reservation calendar
-<img src="https://i.ibb.co/Ry9sKWM/Screenshot-2021-01-31-Cro-Coach-Events.png" alt="Screenshot-2021-01-31-Cro-Coach-Events">
+<img src="images/2.png" alt="reservation calendar">
 
 ### History of reservations
 Admin can see reservations from all users
-<img src="https://i.ibb.co/TYM0xy2/Screenshot-2021-01-31-Cro-Coach-4.png" alt="Screenshot-2021-01-31-Cro-Coach-4">
+<img src="images/3.png" alt="history of reservations">
 
 ### Dashbaord
-<img src="https://i.ibb.co/bgYwd8q/Screenshot-2021-01-31-Cro-Coach-3.png" alt="Screenshot-2021-01-31-Cro-Coach-3">
+<img src="images/4.png" alt="dashboard">
 
 ### Log in
-<img src="https://i.ibb.co/9Zm5Vn2/Screenshot-2021-01-31-Cro-Coach-2.png" alt="Screenshot-2021-01-31-Cro-Coach-2">
+<img src="images/5.png" alt="log in">
 
 ### View for packages
-<img src="https://i.ibb.co/5WJLCvQ/Screenshot-2021-01-31-Cro-Coach-5.png" alt="Screenshot-2021-01-31-Cro-Coach-5">
+<img src="images/6.png" alt="packages">
 
 
 ## License
